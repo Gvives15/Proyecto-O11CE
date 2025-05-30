@@ -1,0 +1,130 @@
+[
+  {
+    "id": "8030555",
+    "nombre": "Abaco Sul"
+  },
+  {
+    "id": "3572937",
+    "nombre": "Acklins Island District"
+  },
+  {
+    "id": "8030552",
+    "nombre": "Andros Norte"
+  },
+  {
+    "id": "8030556",
+    "nombre": "Andros Sur"
+  },
+  {
+    "id": "3572807",
+    "nombre": "Bimini"
+  },
+  {
+    "id": "8030541",
+    "nombre": "Black Point"
+  },
+  {
+    "id": "8030549",
+    "nombre": "Cayo Mangrove"
+  },
+  {
+    "id": "8030543",
+    "nombre": "Central Andros"
+  },
+  {
+    "id": "8030544",
+    "nombre": "Central Eleuthera"
+  },
+  {
+    "id": "8030545",
+    "nombre": "Crooked Island and Long Cay District"
+  },
+  {
+    "id": "8030546",
+    "nombre": "East Grand Bahama"
+  },
+  {
+    "id": "8030553",
+    "nombre": "Eleuthera Norte"
+  },
+  {
+    "id": "8030557",
+    "nombre": "Eleuthera Sur"
+  },
+  {
+    "id": "3572427",
+    "nombre": "Exuma"
+  },
+  {
+    "id": "3572374",
+    "nombre": "Freeport"
+  },
+  {
+    "id": "8030547",
+    "nombre": "Grand Cay"
+  },
+  {
+    "id": "8030548",
+    "nombre": "Hope Town"
+  },
+  {
+    "id": "3572154",
+    "nombre": "Inagua"
+  },
+  {
+    "id": "3572678",
+    "nombre": "Isla Cat"
+  },
+  {
+    "id": "3572238",
+    "nombre": "Isla Harbour"
+  },
+  {
+    "id": "3571629",
+    "nombre": "Isla Ragged"
+  },
+  {
+    "id": "3571809",
+    "nombre": "Islas Berry"
+  },
+  {
+    "id": "3572005",
+    "nombre": "Long Island"
+  },
+  {
+    "id": "3571894",
+    "nombre": "Mayaguana District"
+  },
+  {
+    "id": "8030550",
+    "nombre": "Moore’s Island District"
+  },
+  {
+    "id": "3571815",
+    "nombre": "New Providence District"
+  },
+  {
+    "id": "8030554",
+    "nombre": "Rum Cay"
+  },
+  {
+    "id": "3571493",
+    "nombre": "San Salvador District"
+  },
+  {
+    "id": "8030558",
+    "nombre": "Spanish Wells"
+  },
+  {
+    "id": "8030559",
+    "nombre": "West Grand Bahama"
+  },
+  {
+    "id": "8030542",
+    "nombre": "Ábaco Central"
+  },
+  {
+    "id": "8030551",
+    "nombre": "Ábaco Norte"
+  }
+]

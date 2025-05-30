@@ -1,0 +1,49 @@
+{% extends 'panel/base_panel.html' %}
+{% load static %}
+
+{% block title %}Asignar Permisos{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Asignar Permiso a Rol</h3>
+                </div>
+                <div class="card-body">
+                    <form method="post">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="form-group">
+                                    {{ form.rol.label_tag }}
+                                    {{ form.rol }}
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="form-group">
+                                    {{ form.permission.label_tag }}
+                                    {{ form.permission }}
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    {{ form.is_active.label_tag }}
+                                    {{ form.is_active }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-success">Asignar Permiso</button>
+                                <a href="{% url 'role_permission_list' %}" class="btn btn-secondary">Volver a la lista</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

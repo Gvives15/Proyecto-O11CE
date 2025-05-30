@@ -1,0 +1,134 @@
+[
+  {
+    "id": "3689815",
+    "nombre": "Antioquia"
+  },
+  {
+    "id": "3689717",
+    "nombre": "Arauca"
+  },
+  {
+    "id": "3689436",
+    "nombre": "Atlántico"
+  },
+  {
+    "id": "3688685",
+    "nombre": "Bogotá D.C."
+  },
+  {
+    "id": "3687951",
+    "nombre": "Caldas"
+  },
+  {
+    "id": "3687173",
+    "nombre": "Casanare"
+  },
+  {
+    "id": "3687029",
+    "nombre": "Cauca"
+  },
+  {
+    "id": "3686880",
+    "nombre": "Cesar"
+  },
+  {
+    "id": "3685413",
+    "nombre": "Cundinamarca"
+  },
+  {
+    "id": "3688650",
+    "nombre": "Departamento de Bolívar"
+  },
+  {
+    "id": "3688536",
+    "nombre": "Departamento de Boyacá"
+  },
+  {
+    "id": "3685889",
+    "nombre": "Departamento de Córdoba"
+  },
+  {
+    "id": "3674021",
+    "nombre": "Departamento de Nariño"
+  },
+  {
+    "id": "3689982",
+    "nombre": "Departamento del Amazonas"
+  },
+  {
+    "id": "3687479",
+    "nombre": "Departamento del Caquetá"
+  },
+  {
+    "id": "3686431",
+    "nombre": "Departamento del Chocó"
+  },
+  {
+    "id": "3674810",
+    "nombre": "Departamento del Meta"
+  },
+  {
+    "id": "3671087",
+    "nombre": "Departamento del Quindío"
+  },
+  {
+    "id": "3666254",
+    "nombre": "Departamento del Vaupés"
+  },
+  {
+    "id": "3666082",
+    "nombre": "Departamento del Vichada"
+  },
+  {
+    "id": "3681652",
+    "nombre": "Guainía"
+  },
+  {
+    "id": "3681344",
+    "nombre": "Guaviare"
+  },
+  {
+    "id": "3680692",
+    "nombre": "Huila"
+  },
+  {
+    "id": "3678847",
+    "nombre": "La Guajira"
+  },
+  {
+    "id": "3675686",
+    "nombre": "Magdalena"
+  },
+  {
+    "id": "3673798",
+    "nombre": "Norte de Santander"
+  },
+  {
+    "id": "3671178",
+    "nombre": "Putumayo"
+  },
+  {
+    "id": "3670698",
+    "nombre": "Risaralda"
+  },
+  {
+    "id": "3670205",
+    "nombre": "San Andrés y Providencia"
+  },
+  {
+    "id": "3668578",
+    "nombre": "Santander"
+  },
+  {
+    "id": "3667725",
+    "nombre": "Sucre"
+  },
+  {
+    "id": "3666951",
+    "nombre": "Tolima"
+  },
+  {
+    "id": "3666313",
+    "nombre": "Valle del Cauca"
+  }
+]

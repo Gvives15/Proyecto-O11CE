@@ -1,0 +1,190 @@
+[
+  {
+    "id": "2130037",
+    "nombre": "Hokkaido"
+  },
+  {
+    "id": "1865694",
+    "nombre": "Prefectura de Aichi"
+  },
+  {
+    "id": "2113124",
+    "nombre": "Prefectura de Akita"
+  },
+  {
+    "id": "2130656",
+    "nombre": "Prefectura de Aomori"
+  },
+  {
+    "id": "2113014",
+    "nombre": "Prefectura de Chiba"
+  },
+  {
+    "id": "1864226",
+    "nombre": "Prefectura de Ehime"
+  },
+  {
+    "id": "1863983",
+    "nombre": "Prefectura de Fukui"
+  },
+  {
+    "id": "1863958",
+    "nombre": "Prefectura de Fukuoka"
+  },
+  {
+    "id": "2112922",
+    "nombre": "Prefectura de Fukushima"
+  },
+  {
+    "id": "1863640",
+    "nombre": "Prefectura de Gifu"
+  },
+  {
+    "id": "1863501",
+    "nombre": "Prefectura de Gunma"
+  },
+  {
+    "id": "1862413",
+    "nombre": "Prefectura de Hiroshima"
+  },
+  {
+    "id": "1862047",
+    "nombre": "Prefectura de Hyogo"
+  },
+  {
+    "id": "2112669",
+    "nombre": "Prefectura de Ibaraki"
+  },
+  {
+    "id": "1861387",
+    "nombre": "Prefectura de Ishikawa"
+  },
+  {
+    "id": "2112518",
+    "nombre": "Prefectura de Iwate"
+  },
+  {
+    "id": "1860834",
+    "nombre": "Prefectura de Kagawa"
+  },
+  {
+    "id": "1857907",
+    "nombre": "Prefectura de Kioto"
+  },
+  {
+    "id": "1859133",
+    "nombre": "Prefectura de Kōchi"
+  },
+  {
+    "id": "1857352",
+    "nombre": "Prefectura de Mie"
+  },
+  {
+    "id": "2111888",
+    "nombre": "Prefectura de Miyagi"
+  },
+  {
+    "id": "1856210",
+    "nombre": "Prefectura de Nagano"
+  },
+  {
+    "id": "1855608",
+    "nombre": "Prefectura de Nara"
+  },
+  {
+    "id": "1855429",
+    "nombre": "Prefectura de Niigata"
+  },
+  {
+    "id": "1854381",
+    "nombre": "Prefectura de Okayama"
+  },
+  {
+    "id": "1853904",
+    "nombre": "Prefectura de Osaka"
+  },
+  {
+    "id": "1852553",
+    "nombre": "Prefectura de Shiga"
+  },
+  {
+    "id": "1852442",
+    "nombre": "Prefectura de Shimane"
+  },
+  {
+    "id": "1851715",
+    "nombre": "Prefectura de Shizuoka"
+  },
+  {
+    "id": "1850310",
+    "nombre": "Prefectura de Tochigi"
+  },
+  {
+    "id": "1850157",
+    "nombre": "Prefectura de Tokushima"
+  },
+  {
+    "id": "1849890",
+    "nombre": "Prefectura de Tottori"
+  },
+  {
+    "id": "1849872",
+    "nombre": "Prefectura de Toyama"
+  },
+  {
+    "id": "1848938",
+    "nombre": "Prefectura de Wakayama"
+  },
+  {
+    "id": "2110554",
+    "nombre": "Prefectura de Yamagata"
+  },
+  {
+    "id": "1848649",
+    "nombre": "Prefectura de Yamanashi"
+  },
+  {
+    "id": "1850144",
+    "nombre": "Tokio"
+  },
+  {
+    "id": "1860825",
+    "nombre": "prefectura de Kagoshima"
+  },
+  {
+    "id": "1860291",
+    "nombre": "prefectura de Kanagawa"
+  },
+  {
+    "id": "1858419",
+    "nombre": "prefectura de Kumamoto"
+  },
+  {
+    "id": "1856710",
+    "nombre": "prefectura de Miyazaki"
+  },
+  {
+    "id": "1856156",
+    "nombre": "prefectura de Nagasaki"
+  },
+  {
+    "id": "1854484",
+    "nombre": "prefectura de Oita"
+  },
+  {
+    "id": "1854345",
+    "nombre": "prefectura de Okinawa"
+  },
+  {
+    "id": "1853299",
+    "nombre": "prefectura de Saga"
+  },
+  {
+    "id": "1853226",
+    "nombre": "prefectura de Saitama"
+  },
+  {
+    "id": "1848681",
+    "nombre": "prefectura de Yamaguchi"
+  }
+]

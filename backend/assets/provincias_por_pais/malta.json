@@ -1,0 +1,274 @@
+[
+  {
+    "id": "8299700",
+    "nombre": "Attard"
+  },
+  {
+    "id": "8299701",
+    "nombre": "Balzan"
+  },
+  {
+    "id": "8299703",
+    "nombre": "Birkirkara"
+  },
+  {
+    "id": "8299704",
+    "nombre": "Birżebbuġa"
+  },
+  {
+    "id": "8299705",
+    "nombre": "Bormla"
+  },
+  {
+    "id": "8299706",
+    "nombre": "Dingli"
+  },
+  {
+    "id": "8299710",
+    "nombre": "Għajnsielem"
+  },
+  {
+    "id": "8299702",
+    "nombre": "Il-Birgu"
+  },
+  {
+    "id": "8299707",
+    "nombre": "Il-Fgura"
+  },
+  {
+    "id": "8299709",
+    "nombre": "Il-Fontana"
+  },
+  {
+    "id": "8299708",
+    "nombre": "Il-Furjana"
+  },
+  {
+    "id": "8299715",
+    "nombre": "Il-Gudja"
+  },
+  {
+    "id": "8299716",
+    "nombre": "Il-Gżira"
+  },
+  {
+    "id": "8299725",
+    "nombre": "Il-Kalkara"
+  },
+  {
+    "id": "8299730",
+    "nombre": "Il-Marsa"
+  },
+  {
+    "id": "8299733",
+    "nombre": "Il-Mellieħa"
+  },
+  {
+    "id": "8299734",
+    "nombre": "Il-Mosta"
+  },
+  {
+    "id": "8299735",
+    "nombre": "Il-Munxar"
+  },
+  {
+    "id": "8299741",
+    "nombre": "Il-Qala"
+  },
+  {
+    "id": "8299743",
+    "nombre": "Il-Qrendi"
+  },
+  {
+    "id": "8299717",
+    "nombre": "Il-Ħamrun"
+  },
+  {
+    "id": "8299736",
+    "nombre": "In-Nadur"
+  },
+  {
+    "id": "8299737",
+    "nombre": "In-Naxxar"
+  },
+  {
+    "id": "8299744",
+    "nombre": "Ir-Rabat"
+  },
+  {
+    "id": "8299754",
+    "nombre": "Is-Siġġiewi"
+  },
+  {
+    "id": "8299756",
+    "nombre": "Is-Swieqi"
+  },
+  {
+    "id": "8299759",
+    "nombre": "Ix-Xagħra"
+  },
+  {
+    "id": "8299760",
+    "nombre": "Ix-Xewkija"
+  },
+  {
+    "id": "8299761",
+    "nombre": "Ix-Xgħajra"
+  },
+  {
+    "id": "8299764",
+    "nombre": "Iż-Żebbuġ"
+  },
+  {
+    "id": "8299765",
+    "nombre": "Iż-Żejtun"
+  },
+  {
+    "id": "8299766",
+    "nombre": "Iż-Żurrieq"
+  },
+  {
+    "id": "8299727",
+    "nombre": "Kirkop"
+  },
+  {
+    "id": "8299711",
+    "nombre": "L-Għarb"
+  },
+  {
+    "id": "8299713",
+    "nombre": "L-Għasri"
+  },
+  {
+    "id": "8299718",
+    "nombre": "L-Iklin"
+  },
+  {
+    "id": "8299719",
+    "nombre": "L-Imdina"
+  },
+  {
+    "id": "8299721",
+    "nombre": "L-Imqabba"
+  },
+  {
+    "id": "8299722",
+    "nombre": "L-Imsida"
+  },
+  {
+    "id": "8299723",
+    "nombre": "L-Imtarfa"
+  },
+  {
+    "id": "8299720",
+    "nombre": "L-Imġarr"
+  },
+  {
+    "id": "8299724",
+    "nombre": "L-Isla"
+  },
+  {
+    "id": "8299728",
+    "nombre": "Lija"
+  },
+  {
+    "id": "8299729",
+    "nombre": "Luqa"
+  },
+  {
+    "id": "8299731",
+    "nombre": "Marsaskala"
+  },
+  {
+    "id": "8299732",
+    "nombre": "Marsaxlokk"
+  },
+  {
+    "id": "8299738",
+    "nombre": "Paola"
+  },
+  {
+    "id": "8299739",
+    "nombre": "Pembroke"
+  },
+  {
+    "id": "8299742",
+    "nombre": "Qormi"
+  },
+  {
+    "id": "8299746",
+    "nombre": "Safi"
+  },
+  {
+    "id": "8299747",
+    "nombre": "Saint John"
+  },
+  {
+    "id": "8299748",
+    "nombre": "Saint Julian's"
+  },
+  {
+    "id": "8299749",
+    "nombre": "Saint Lawrence"
+  },
+  {
+    "id": "8299750",
+    "nombre": "Saint Lucia"
+  },
+  {
+    "id": "8299751",
+    "nombre": "Saint Paul’s Bay"
+  },
+  {
+    "id": "8299752",
+    "nombre": "Saint Venera"
+  },
+  {
+    "id": "8299753",
+    "nombre": "Sannat"
+  },
+  {
+    "id": "8299740",
+    "nombre": "Tal-Pietà"
+  },
+  {
+    "id": "8299757",
+    "nombre": "Tarxien"
+  },
+  {
+    "id": "8299755",
+    "nombre": "Tas-Sliema"
+  },
+  {
+    "id": "8299726",
+    "nombre": "Ta’ Kerċem"
+  },
+  {
+    "id": "8299758",
+    "nombre": "Ta’ Xbiex"
+  },
+  {
+    "id": "8334638",
+    "nombre": "Valletta"
+  },
+  {
+    "id": "8299745",
+    "nombre": "Victoria"
+  },
+  {
+    "id": "8299712",
+    "nombre": "Ħal Għargħur"
+  },
+  {
+    "id": "8299714",
+    "nombre": "Ħal Għaxaq"
+  },
+  {
+    "id": "8299762",
+    "nombre": "Ħaż-Żabbar"
+  },
+  {
+    "id": "8299763",
+    "nombre": "Ħaż-Żebbuġ"
+  }
+]

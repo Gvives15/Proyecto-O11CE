@@ -1,0 +1,231 @@
+<!-- Sidebar -->
+<aside class="sidebar" id="sidebar">
+  <!-- Debug info -->
+  <!-- Pacientes menu: {{ pacientes_menu|length }} items -->
+  <!-- Blog menu: {{ blog_menu|length }} items -->
+  <!-- Academia menu: {{ academia_menu|length }} items -->
+  <!-- Config menu: {{ config_menu|length }} items -->
+  
+  <div class="sidebar-header">
+    <div class="brand-link">
+      <span class="logo">MP</span>
+      <h1>MigPsicologia</h1>
+    </div>
+    <button id="sidebar-close" class="sidebar-toggle mobile-only">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+          <!-- Sección: Pacientes -->
+          <li class="nav-item">
+            <a href="#" class="nav-link" onclick="toggleSubmenu('pacientesSub')">
+              <i class="nav-icon bi bi-person-fill"></i>
+              <p>Pacientes <i class="nav-arrow bi bi-chevron-down"></i></p>
+            </a>
+            <ul class="nav nav-treeview" id="pacientesSub" style="display: none;">
+              {% for item in pacientes_menu %}
+                <li class="nav-item">
+                  <a href="{% url item.url %}" class="nav-link">
+                    <i class="{{ item.icono }}"></i>
+                    <p>{{ item.nombre }}</p>
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          </li>
+  
+          <!-- Sección: Blog -->
+          <li class="nav-item">
+            <a href="{% url blog_menu.0.url %}" class="nav-link">
+              <i class="nav-icon {{ blog_menu.0.icono }}"></i>
+              <p>{{ blog_menu.0.nombre }}</p>
+            </a>
+          </li>
+  
+          <!-- Sección: Academia -->
+          <li class="nav-item">
+            <a href="#" class="nav-link" onclick="toggleSubmenu('academiaSub')">
+              <i class="nav-icon bi bi-mortarboard-fill"></i>
+              <p>Academia <i class="nav-arrow bi bi-chevron-down"></i></p>
+            </a>
+            <ul class="nav nav-treeview" id="academiaSub" style="display: none;">
+              {% for item in academia_menu %}
+                <li class="nav-item">
+                  <a href="{% url item.url %}" class="nav-link">
+                    <i class="{{ item.icono }}"></i>
+                    <p>{{ item.nombre }}</p>
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          </li>
+  
+        </ul>
+      </nav>
+  <nav class="sidebar-nav">
+    <!-- Sección: Dashboard -->
+    <div class="nav-section">
+      <h3><i class="fas fa-home"></i> Principal</h3>
+      <ul>
+        <li class="nav-item">
+          <a href="{% url 'dashboard' %}" class="nav-link {% if request.path == '/dashboard/' %}active{% endif %}">
+            <i class="fas fa-tachometer-alt"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Sección: Pacientes -->
+    <div class="nav-section">
+      <h3><i class="fas fa-users"></i> Pacientes</h3>
+      <ul>
+        <li class="nav-item">
+          <a href="#" class="nav-link has-submenu" data-submenu="pacientesSub">
+            <i class="fas fa-user"></i>
+            <span>Pacientes</span>
+            <i class="fas fa-chevron-right submenu-arrow"></i>
+          </a>
+          <ul class="submenu" id="pacientesSub">
+            {% for item in pacientes_menu %}
+            <li class="submenu-item">
+              <a href="{% url item.url %}" class="submenu-link {% if request.path == item.active_path %}active{% endif %}">
+                <i class="{{ item.icono }}"></i>
+                <span>{{ item.nombre }}</span>
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link {% if request.path == '/appointments/' %}active{% endif %}">
+            <i class="fas fa-calendar-alt"></i>
+            <span>Citas</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Sección: Blog -->
+    <div class="nav-section">
+      <h3><i class="fas fa-blog"></i> Blog</h3>
+      <ul>
+        <li class="nav-item">
+          <a href="#" class="nav-link has-submenu" data-submenu="blogSub">
+            <i class="fas fa-newspaper"></i>
+            <span>Artículos</span>
+            <i class="fas fa-chevron-right submenu-arrow"></i>
+          </a>
+          <ul class="submenu" id="blogSub">
+            {% for item in blog_menu %}
+            <li class="submenu-item">
+              <a href="{% url item.url %}" class="submenu-link {% if request.path == item.active_path %}active{% endif %}">
+                <i class="{{ item.icono }}"></i>
+                <span>{{ item.nombre }}</span>
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link {% if request.path == '/comments/' %}active{% endif %}">
+            <i class="fas fa-comments"></i>
+            <span>Comentarios</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Sección: Academia -->
+    <div class="nav-section">
+      <h3><i class="fas fa-university"></i> Academia</h3>
+      <ul>
+        <li class="nav-item">
+          <a href="#" class="nav-link has-submenu" data-submenu="academiaSub">
+            <i class="fas fa-graduation-cap"></i>
+            <span>Cursos</span>
+            <i class="fas fa-chevron-right submenu-arrow"></i>
+          </a>
+          <ul class="submenu" id="academiaSub">
+            {% for item in academia_menu %}
+            <li class="submenu-item">
+              <a href="{% url item.url %}" class="submenu-link {% if request.path == item.active_path %}active{% endif %}">
+                <i class="{{ item.icono }}"></i>
+                <span>{{ item.nombre }}</span>
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link {% if request.path == '/students/' %}active{% endif %}">
+            <i class="fas fa-user-graduate"></i>
+            <span>Estudiantes</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link {% if request.path == '/certificates/' %}active{% endif %}">
+            <i class="fas fa-certificate"></i>
+            <span>Certificados</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Sección: Configuración -->
+    <div class="nav-section">
+      <h3><i class="fas fa-cog"></i> Configuración</h3>
+      <ul>
+        <li class="nav-item">
+          <a href="#" class="nav-link has-submenu" data-submenu="configSub">
+            <i class="fas fa-sliders-h"></i>
+            <span>Configuración</span>
+            <i class="fas fa-chevron-right submenu-arrow"></i>
+          </a>
+          <ul class="submenu" id="configSub">
+            {% for item in config_menu %}
+            <li class="submenu-item">
+              <a href="{% url item.url %}" class="submenu-link {% if request.path == item.active_path %}active{% endif %}">
+                <i class="{{ item.icono }}"></i>
+                <span>{{ item.nombre }}</span>
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link has-submenu" data-submenu="permisosSub">
+            <i class="fas fa-key"></i>
+            <span>Permisos</span>
+            <i class="fas fa-chevron-right submenu-arrow"></i>
+          </a>
+          <ul class="submenu" id="permisosSub">
+            <li class="submenu-item">
+              <a href="{% url 'role_permission_list' %}" class="submenu-link {% if request.path == '/permisos/lista/' %}active{% endif %}">
+                <i class="fas fa-list"></i>
+                <span>Lista de Permisos</span>
+              </a>
+            </li>
+            <li class="submenu-item">
+              <a href="{% url 'assign_permission' %}" class="submenu-link {% if request.path == '/permisos/asignar/' %}active{% endif %}">
+                <i class="fas fa-plus-circle"></i>
+                <span>Asignar Permisos</span>
+              </a>
+            </li>
+            <li class="submenu-item">
+              <a href="{% url 'permission_list' %}" class="submenu-link {% if request.path == '/permisos/crear/' %}active{% endif %}">
+                <i class="fas fa-cog"></i>
+                <span>Gestionar Permisos</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link {% if request.path == '/profile/' %}active{% endif %}">
+            <i class="fas fa-user-cog"></i>
+            <span>Mi Perfil</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</aside>

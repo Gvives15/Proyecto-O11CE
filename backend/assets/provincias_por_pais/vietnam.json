@@ -1,0 +1,254 @@
+[
+  {
+    "id": "1594446",
+    "nombre": "An Giang"
+  },
+  {
+    "id": "1584534",
+    "nombre": "Bà Rịa-Vũng Tàu"
+  },
+  {
+    "id": "1905475",
+    "nombre": "Bình Dương"
+  },
+  {
+    "id": "1905480",
+    "nombre": "Bình Phước"
+  },
+  {
+    "id": "1581882",
+    "nombre": "Bình Thuận"
+  },
+  {
+    "id": "1587871",
+    "nombre": "Bình Định"
+  },
+  {
+    "id": "1905675",
+    "nombre": "Bạc Liêu"
+  },
+  {
+    "id": "1905419",
+    "nombre": "Bắc Giang"
+  },
+  {
+    "id": "1905412",
+    "nombre": "Bắc Ninh"
+  },
+  {
+    "id": "1587974",
+    "nombre": "Bến Tre"
+  },
+  {
+    "id": "1586182",
+    "nombre": "Cao Bằng"
+  },
+  {
+    "id": "1580578",
+    "nombre": "Ciudad Ho Chi Minh"
+  },
+  {
+    "id": "1905678",
+    "nombre": "Cà Mau"
+  },
+  {
+    "id": "1581188",
+    "nombre": "Cần Thơ"
+  },
+  {
+    "id": "1581088",
+    "nombre": "Gia Lai"
+  },
+  {
+    "id": "1581129",
+    "nombre": "Hanoi"
+  },
+  {
+    "id": "1581030",
+    "nombre": "Hà Giang"
+  },
+  {
+    "id": "1580700",
+    "nombre": "Hà Tĩnh"
+  },
+  {
+    "id": "1905699",
+    "nombre": "Hưng Yên"
+  },
+  {
+    "id": "1581297",
+    "nombre": "Hải Phòng"
+  },
+  {
+    "id": "7506719",
+    "nombre": "Hậu Giang Province"
+  },
+  {
+    "id": "1579634",
+    "nombre": "Khánh Hòa"
+  },
+  {
+    "id": "1565088",
+    "nombre": "Kon Tum"
+  },
+  {
+    "id": "1577954",
+    "nombre": "Lai Châu"
+  },
+  {
+    "id": "1562412",
+    "nombre": "Lao Cai"
+  },
+  {
+    "id": "1575788",
+    "nombre": "Long An"
+  },
+  {
+    "id": "1577882",
+    "nombre": "Lâm Đồng"
+  },
+  {
+    "id": "1576632",
+    "nombre": "Lạng Sơn"
+  },
+  {
+    "id": "1905626",
+    "nombre": "Nam Định"
+  },
+  {
+    "id": "1559971",
+    "nombre": "Ninh Thuận"
+  },
+  {
+    "id": "1905577",
+    "nombre": "Phú Thọ"
+  },
+  {
+    "id": "1569805",
+    "nombre": "Phú Yên"
+  },
+  {
+    "id": "1568839",
+    "nombre": "Quảng Bình"
+  },
+  {
+    "id": "1905516",
+    "nombre": "Quảng Nam"
+  },
+  {
+    "id": "1568769",
+    "nombre": "Quảng Ngãi"
+  },
+  {
+    "id": "1568758",
+    "nombre": "Quảng Ninh"
+  },
+  {
+    "id": "1568733",
+    "nombre": "Quảng Trị"
+  },
+  {
+    "id": "1559972",
+    "nombre": "Sóc Trăng"
+  },
+  {
+    "id": "1567643",
+    "nombre": "Sơn La"
+  },
+  {
+    "id": "1566165",
+    "nombre": "Thanh Hóa"
+  },
+  {
+    "id": "1566338",
+    "nombre": "Thái Bình"
+  },
+  {
+    "id": "1905497",
+    "nombre": "Thái Nguyên"
+  },
+  {
+    "id": "1565033",
+    "nombre": "Thừa Thiên Huế"
+  },
+  {
+    "id": "1564676",
+    "nombre": "Tiền Giang"
+  },
+  {
+    "id": "1559976",
+    "nombre": "Tuyên Quang"
+  },
+  {
+    "id": "1566557",
+    "nombre": "Tây Ninh"
+  },
+  {
+    "id": "1905669",
+    "nombre": "Tỉnh Bắc Kạn"
+  },
+  {
+    "id": "1905637",
+    "nombre": "Tỉnh Hà Nam"
+  },
+  {
+    "id": "1572594",
+    "nombre": "Tỉnh Hòa Bình"
+  },
+  {
+    "id": "1905686",
+    "nombre": "Tỉnh Hải Dương"
+  },
+  {
+    "id": "1579008",
+    "nombre": "Tỉnh Kiến Giang"
+  },
+  {
+    "id": "1559969",
+    "nombre": "Tỉnh Nghệ An"
+  },
+  {
+    "id": "1559970",
+    "nombre": "Tỉnh Ninh Bình"
+  },
+  {
+    "id": "1559975",
+    "nombre": "Tỉnh Trà Vinh"
+  },
+  {
+    "id": "1559978",
+    "nombre": "Tỉnh Yên Bái"
+  },
+  {
+    "id": "1905099",
+    "nombre": "Tỉnh Ðiện Biên"
+  },
+  {
+    "id": "1559977",
+    "nombre": "Vĩnh Long"
+  },
+  {
+    "id": "1905856",
+    "nombre": "Vĩnh Phúc"
+  },
+  {
+    "id": "1904987",
+    "nombre": "Ðắk Nông"
+  },
+  {
+    "id": "1905468",
+    "nombre": "Đà Nẵng"
+  },
+  {
+    "id": "1584169",
+    "nombre": "Đắk Lắk"
+  },
+  {
+    "id": "1582720",
+    "nombre": "Đồng Nai"
+  },
+  {
+    "id": "1582562",
+    "nombre": "Đồng Tháp"
+  }
+]

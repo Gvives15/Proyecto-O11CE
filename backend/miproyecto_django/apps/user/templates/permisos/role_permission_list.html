@@ -1,0 +1,141 @@
+{% extends 'panel/base_panel.html' %}
+{% load static %}
+
+{% block title %}Lista de Permisos{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Lista de Permisos</h3>
+                </div>
+                <div class="card-body">
+                    <!-- Formulario de filtros -->
+                    <form method="get" class="mb-4" id="filterForm">
+                        <div class="row">
+                            <div class="col-md-6">
+                                {{ filter_form.rol.label_tag }}
+                                {{ filter_form.rol }}
+                            </div>
+                            <div class="col-md-6">
+                                {{ filter_form.permission.label_tag }}
+                                {{ filter_form.permission }}
+                            </div>
+                        </div>
+                    
+                    </form>
+
+                    <!-- Lista de permisos y roles asignados -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Permisos y Roles Asignados</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Permiso</th>
+                                            <th>Descripción</th>
+                                            <th>Roles Asignados</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for codename, perm_data in permissions_with_roles.items %}
+                                        <tr>
+                                            <td>{{ perm_data.name }}</td>
+                                            <td>{{ perm_data.description }}</td>
+                                            <td>
+                                                {% if perm_data.roles %}
+                                                    {% for role in perm_data.roles %}
+                                                        <span class="badge badge-info">{{ role|title }}</span>
+                                                    {% endfor %}
+                                                {% else %}
+                                                    <span class="text-muted">Ningún rol asignado</span>
+                                                {% endif %}
+                                            </td>
+                                        </tr>
+                                        {% empty %}
+                                        <tr>
+                                            <td colspan="3" class="text-center">No hay permisos asignados</td>
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lista de asignaciones individuales -->
+                    <div class="card mt-4">
+                        <div class="card-header">
+                            <h4 class="card-title">Detalle de Asignaciones</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Rol</th>
+                                            <th>Permiso</th>
+                                            <th>Estado</th>
+                                            <th>Fecha de Asignación</th>
+                                            <th>Acciones</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for rp in role_permissions %}
+                                        <tr>
+                                            <td>{{ rp.get_rol_display }}</td>
+                                            <td>{{ rp.permission.name }}</td>
+                                            <td>
+                                                {% if rp.is_active %}
+                                                <span class="badge badge-success">Activo</span>
+                                                {% else %}
+                                                <span class="badge badge-danger">Inactivo</span>
+                                                {% endif %}
+                                            </td>
+                                            <td>{{ rp.created_at|date:"d/m/Y H:i" }}</td>
+                                            <td>
+                                                <a href="{% url 'role_permission_edit' rp.id %}" class="btn btn-sm btn-primary">
+                                                    <i class="fas fa-edit"></i> Editar
+                                                </a>
+                                                <a href="{% url 'role_permission_delete' rp.id %}" class="btn btn-sm btn-danger">
+                                                    <i class="fas fa-trash"></i> Eliminar
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        {% empty %}
+                                        <tr>
+                                            <td colspan="5" class="text-center">No hay permisos asignados</td>
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% block extra_js %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Obtener todos los elementos de filtro
+    const filterInputs = document.querySelectorAll('#filterForm select');
+    
+    // Agregar evento change a cada elemento
+    filterInputs.forEach(input => {
+        input.addEventListener('change', function() {
+            document.getElementById('filterForm').submit();
+        });
+    });
+});
+</script>
+{% endblock %}
+{% endblock %} 

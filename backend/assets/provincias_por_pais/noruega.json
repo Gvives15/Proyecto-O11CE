@@ -1,0 +1,62 @@
+[
+  {
+    "id": "12110596",
+    "nombre": "Agder"
+  },
+  {
+    "id": "3163480",
+    "nombre": "Akershus"
+  },
+  {
+    "id": "3159665",
+    "nombre": "Buskerud fylke"
+  },
+  {
+    "id": "780166",
+    "nombre": "Finnmark"
+  },
+  {
+    "id": "12110598",
+    "nombre": "Innlandet"
+  },
+  {
+    "id": "3145495",
+    "nombre": "Møre og Romsdal fylke"
+  },
+  {
+    "id": "3144301",
+    "nombre": "Nordland"
+  },
+  {
+    "id": "3143242",
+    "nombre": "Oslo County"
+  },
+  {
+    "id": "3141558",
+    "nombre": "Rogaland"
+  },
+  {
+    "id": "3134723",
+    "nombre": "Telemark"
+  },
+  {
+    "id": "3133897",
+    "nombre": "Troms"
+  },
+  {
+    "id": "11862827",
+    "nombre": "Trøndelag"
+  },
+  {
+    "id": "3132015",
+    "nombre": "Vestfold"
+  },
+  {
+    "id": "12110600",
+    "nombre": "Vestland"
+  },
+  {
+    "id": "3143188",
+    "nombre": "Østfold"
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "id": "3435907",
+    "nombre": "Buenos Aires"
+  },
+  {
+    "id": "3433955",
+    "nombre": "Buenos Aires C.F."
+  },
+  {
+    "id": "3862286",
+    "nombre": "Catamarca"
+  },
+  {
+    "id": "3861887",
+    "nombre": "Chaco"
+  },
+  {
+    "id": "3861244",
+    "nombre": "Chubut"
+  },
+  {
+    "id": "3435214",
+    "nombre": "Corrientes"
+  },
+  {
+    "id": "3860255",
+    "nombre": "Córdoba"
+  },
+  {
+    "id": "3434137",
+    "nombre": "Entre Ríos"
+  },
+  {
+    "id": "3433896",
+    "nombre": "Formosa"
+  },
+  {
+    "id": "3853404",
+    "nombre": "Jujuy"
+  },
+  {
+    "id": "3849574",
+    "nombre": "La Pampa"
+  },
+  {
+    "id": "3848949",
+    "nombre": "La Rioja"
+  },
+  {
+    "id": "3844419",
+    "nombre": "Mendoza"
+  },
+  {
+    "id": "3430657",
+    "nombre": "Misiones"
+  },
+  {
+    "id": "3843122",
+    "nombre": "Neuquén"
+  },
+  {
+    "id": "3838830",
+    "nombre": "Río Negro"
+  },
+  {
+    "id": "3838231",
+    "nombre": "Salta"
+  },
+  {
+    "id": "3837152",
+    "nombre": "San Juan"
+  },
+  {
+    "id": "3837029",
+    "nombre": "San Luis"
+  },
+  {
+    "id": "3836350",
+    "nombre": "Santa Cruz"
+  },
+  {
+    "id": "3836276",
+    "nombre": "Santa Fe"
+  },
+  {
+    "id": "3835868",
+    "nombre": "Santiago del Estero"
+  },
+  {
+    "id": "3834450",
+    "nombre": "Tierra del Fuego"
+  },
+  {
+    "id": "3833578",
+    "nombre": "Tucumán"
+  }
+]

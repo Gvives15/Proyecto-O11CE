@@ -1,0 +1,334 @@
+[
+  {
+    "id": "584222",
+    "nombre": "Adigueya"
+  },
+  {
+    "id": "1506272",
+    "nombre": "Altái"
+  },
+  {
+    "id": "2027748",
+    "nombre": "Amur"
+  },
+  {
+    "id": "580491",
+    "nombre": "Astracán"
+  },
+  {
+    "id": "578853",
+    "nombre": "Baskortostán"
+  },
+  {
+    "id": "2050915",
+    "nombre": "Buriatia"
+  },
+  {
+    "id": "552548",
+    "nombre": "Carelia"
+  },
+  {
+    "id": "569665",
+    "nombre": "Chechenia"
+  },
+  {
+    "id": "1508290",
+    "nombre": "Cheliábinsk"
+  },
+  {
+    "id": "2126099",
+    "nombre": "Chukotka"
+  },
+  {
+    "id": "567395",
+    "nombre": "Chuvasia"
+  },
+  {
+    "id": "567293",
+    "nombre": "Daguestán"
+  },
+  {
+    "id": "556349",
+    "nombre": "Ingusetia"
+  },
+  {
+    "id": "2023468",
+    "nombre": "Irkutsk Oblast"
+  },
+  {
+    "id": "1503834",
+    "nombre": "Jakasia"
+  },
+  {
+    "id": "554667",
+    "nombre": "Kabardina-Balkaria"
+  },
+  {
+    "id": "553972",
+    "nombre": "Kalmukia"
+  },
+  {
+    "id": "553899",
+    "nombre": "Kaluga"
+  },
+  {
+    "id": "2125072",
+    "nombre": "Kamchatka Krai"
+  },
+  {
+    "id": "552927",
+    "nombre": "Karacháyevo-Cherkesia"
+  },
+  {
+    "id": "1503900",
+    "nombre": "Kemerovo Oblast"
+  },
+  {
+    "id": "1503773",
+    "nombre": "Khanty-Mansiyskiy Avtonomnyy Okrug-Yugra"
+  },
+  {
+    "id": "545854",
+    "nombre": "Komi"
+  },
+  {
+    "id": "2017623",
+    "nombre": "Krai De Primorsky"
+  },
+  {
+    "id": "1511732",
+    "nombre": "Krai de Altái"
+  },
+  {
+    "id": "2022888",
+    "nombre": "Krai de Khabarovsk"
+  },
+  {
+    "id": "1502020",
+    "nombre": "Krai de Krasnojarsk"
+  },
+  {
+    "id": "511180",
+    "nombre": "Krai de Perm"
+  },
+  {
+    "id": "487839",
+    "nombre": "Krai de Stávropol"
+  },
+  {
+    "id": "542415",
+    "nombre": "Krasnodarskiy"
+  },
+  {
+    "id": "1501312",
+    "nombre": "Kurgán"
+  },
+  {
+    "id": "2123627",
+    "nombre": "Magadán"
+  },
+  {
+    "id": "529352",
+    "nombre": "Mari-El"
+  },
+  {
+    "id": "525369",
+    "nombre": "Mordovia"
+  },
+  {
+    "id": "524894",
+    "nombre": "Moscú"
+  },
+  {
+    "id": "522652",
+    "nombre": "Nenetsia"
+  },
+  {
+    "id": "1496745",
+    "nombre": "Novosibirsk"
+  },
+  {
+    "id": "1496152",
+    "nombre": "Omsk"
+  },
+  {
+    "id": "515001",
+    "nombre": "Orenburg Oblast"
+  },
+  {
+    "id": "519969",
+    "nombre": "Osetia del Norte"
+  },
+  {
+    "id": "501165",
+    "nombre": "Rostov"
+  },
+  {
+    "id": "2121529",
+    "nombre": "Sajalin"
+  },
+  {
+    "id": "2013162",
+    "nombre": "Sajá Yakutia"
+  },
+  {
+    "id": "536203",
+    "nombre": "San Petersburgo"
+  },
+  {
+    "id": "1490542",
+    "nombre": "Sverdlovsk"
+  },
+  {
+    "id": "484638",
+    "nombre": "Tambov"
+  },
+  {
+    "id": "484048",
+    "nombre": "Tartaristan"
+  },
+  {
+    "id": "1488747",
+    "nombre": "Tiumen"
+  },
+  {
+    "id": "1489421",
+    "nombre": "Tomsk Oblast"
+  },
+  {
+    "id": "1488873",
+    "nombre": "Tuvá"
+  },
+  {
+    "id": "479613",
+    "nombre": "Udmurtia"
+  },
+  {
+    "id": "472755",
+    "nombre": "Volgogrado"
+  },
+  {
+    "id": "1486462",
+    "nombre": "Yamalia-Nenetsia"
+  },
+  {
+    "id": "7779061",
+    "nombre": "Zabaikalie"
+  },
+  {
+    "id": "2026639",
+    "nombre": "Óblast Autónomo Hebreo"
+  },
+  {
+    "id": "581043",
+    "nombre": "Óblast de Arcángel"
+  },
+  {
+    "id": "571473",
+    "nombre": "Óblast de Briansk"
+  },
+  {
+    "id": "578071",
+    "nombre": "Óblast de Bélgorod"
+  },
+  {
+    "id": "555235",
+    "nombre": "Óblast de Ivánovo"
+  },
+  {
+    "id": "554230",
+    "nombre": "Óblast de Kaliningrado"
+  },
+  {
+    "id": "543871",
+    "nombre": "Óblast de Kostromá"
+  },
+  {
+    "id": "548389",
+    "nombre": "Óblast de Kírov"
+  },
+  {
+    "id": "536199",
+    "nombre": "Óblast de Leningrado"
+  },
+  {
+    "id": "535120",
+    "nombre": "Óblast de Lípetsk"
+  },
+  {
+    "id": "524925",
+    "nombre": "Óblast de Moscú"
+  },
+  {
+    "id": "524304",
+    "nombre": "Óblast de Múrmansk"
+  },
+  {
+    "id": "559838",
+    "nombre": "Óblast de Nizhni Nóvgorod"
+  },
+  {
+    "id": "519324",
+    "nombre": "Óblast de Nóvgorod"
+  },
+  {
+    "id": "511555",
+    "nombre": "Óblast de Penza"
+  },
+  {
+    "id": "504338",
+    "nombre": "Óblast de Pskov"
+  },
+  {
+    "id": "500059",
+    "nombre": "Óblast de Riazán"
+  },
+  {
+    "id": "499068",
+    "nombre": "Óblast de Samara"
+  },
+  {
+    "id": "498671",
+    "nombre": "Óblast de Sarátov"
+  },
+  {
+    "id": "491684",
+    "nombre": "Óblast de Smolensk"
+  },
+  {
+    "id": "480508",
+    "nombre": "Óblast de Tula"
+  },
+  {
+    "id": "480041",
+    "nombre": "Óblast de Tver"
+  },
+  {
+    "id": "479119",
+    "nombre": "Óblast de Uliánovsk"
+  },
+  {
+    "id": "826294",
+    "nombre": "Óblast de Vladímir"
+  },
+  {
+    "id": "472039",
+    "nombre": "Óblast de Vorónezh"
+  },
+  {
+    "id": "472454",
+    "nombre": "Óblast de Vólogda"
+  },
+  {
+    "id": "468898",
+    "nombre": "Óblast de Yaroslavl"
+  },
+  {
+    "id": "538555",
+    "nombre": "óblast de Kursk"
+  },
+  {
+    "id": "514801",
+    "nombre": "óblast de Oriol"
+  }
+]

@@ -1,0 +1,326 @@
+[
+  {
+    "id": "862467",
+    "nombre": "Bartın"
+  },
+  {
+    "id": "865521",
+    "nombre": "Düzce"
+  },
+  {
+    "id": "325361",
+    "nombre": "Provincia de Adana"
+  },
+  {
+    "id": "325329",
+    "nombre": "Provincia de Adıyaman"
+  },
+  {
+    "id": "325302",
+    "nombre": "Provincia de Afyonkarahisar"
+  },
+  {
+    "id": "325163",
+    "nombre": "Provincia de Agri"
+  },
+  {
+    "id": "443185",
+    "nombre": "Provincia de Aksaray"
+  },
+  {
+    "id": "752014",
+    "nombre": "Provincia de Amasya"
+  },
+  {
+    "id": "323784",
+    "nombre": "Provincia de Ankara"
+  },
+  {
+    "id": "323776",
+    "nombre": "Provincia de Antalya"
+  },
+  {
+    "id": "862470",
+    "nombre": "Provincia de Ardahan"
+  },
+  {
+    "id": "751816",
+    "nombre": "Provincia de Artvin"
+  },
+  {
+    "id": "322819",
+    "nombre": "Provincia de Aydin"
+  },
+  {
+    "id": "322164",
+    "nombre": "Provincia de Balıkesir"
+  },
+  {
+    "id": "443186",
+    "nombre": "Provincia de Batman"
+  },
+  {
+    "id": "862471",
+    "nombre": "Provincia de Bayburt"
+  },
+  {
+    "id": "321122",
+    "nombre": "Provincia de Bilecik"
+  },
+  {
+    "id": "321079",
+    "nombre": "Provincia de Bingöl"
+  },
+  {
+    "id": "321022",
+    "nombre": "Provincia de Bitlis"
+  },
+  {
+    "id": "750510",
+    "nombre": "Provincia de Bolu"
+  },
+  {
+    "id": "320390",
+    "nombre": "Provincia de Burdur"
+  },
+  {
+    "id": "750268",
+    "nombre": "Provincia de Bursa"
+  },
+  {
+    "id": "317106",
+    "nombre": "Provincia de Denizli"
+  },
+  {
+    "id": "316540",
+    "nombre": "Provincia de Diyarbakır"
+  },
+  {
+    "id": "747711",
+    "nombre": "Provincia de Edirne"
+  },
+  {
+    "id": "315807",
+    "nombre": "Provincia de Elazığ"
+  },
+  {
+    "id": "315372",
+    "nombre": "Provincia de Erzincan"
+  },
+  {
+    "id": "315367",
+    "nombre": "Provincia de Erzurum"
+  },
+  {
+    "id": "315201",
+    "nombre": "Provincia de Eskişehir"
+  },
+  {
+    "id": "311044",
+    "nombre": "Provincia de Esmirna"
+  },
+  {
+    "id": "745042",
+    "nombre": "Provincia de Estambul"
+  },
+  {
+    "id": "314829",
+    "nombre": "Provincia de Gaziantep"
+  },
+  {
+    "id": "746878",
+    "nombre": "Provincia de Giresun"
+  },
+  {
+    "id": "746423",
+    "nombre": "Provincia de Gümüşhane"
+  },
+  {
+    "id": "312888",
+    "nombre": "Provincia de Hakkâri"
+  },
+  {
+    "id": "312394",
+    "nombre": "Provincia de Hatay"
+  },
+  {
+    "id": "311071",
+    "nombre": "Provincia de Isparta"
+  },
+  {
+    "id": "443184",
+    "nombre": "Provincia de Iğdır"
+  },
+  {
+    "id": "310858",
+    "nombre": "Provincia de Kahramanmaraş"
+  },
+  {
+    "id": "862468",
+    "nombre": "Provincia de Karabük"
+  },
+  {
+    "id": "443187",
+    "nombre": "Provincia de Karaman"
+  },
+  {
+    "id": "743881",
+    "nombre": "Provincia de Kastamonu"
+  },
+  {
+    "id": "308463",
+    "nombre": "Provincia de Kayseri"
+  },
+  {
+    "id": "443213",
+    "nombre": "Provincia de Kilis"
+  },
+  {
+    "id": "742865",
+    "nombre": "Provincia de Kocaeli"
+  },
+  {
+    "id": "306569",
+    "nombre": "Provincia de Konya"
+  },
+  {
+    "id": "305267",
+    "nombre": "Provincia de Kütahya"
+  },
+  {
+    "id": "743165",
+    "nombre": "Provincia de Kırklareli"
+  },
+  {
+    "id": "443188",
+    "nombre": "Provincia de Kırıkkale"
+  },
+  {
+    "id": "307513",
+    "nombre": "Provincia de Kırşehir"
+  },
+  {
+    "id": "304919",
+    "nombre": "Provincia de Malatya"
+  },
+  {
+    "id": "304825",
+    "nombre": "Provincia de Manisa"
+  },
+  {
+    "id": "304794",
+    "nombre": "Provincia de Mardin"
+  },
+  {
+    "id": "311728",
+    "nombre": "Provincia de Mersin"
+  },
+  {
+    "id": "304183",
+    "nombre": "Provincia de Muğla"
+  },
+  {
+    "id": "303830",
+    "nombre": "Provincia de Nevşehir"
+  },
+  {
+    "id": "303826",
+    "nombre": "Provincia de Niğde"
+  },
+  {
+    "id": "741098",
+    "nombre": "Provincia de Ordu"
+  },
+  {
+    "id": "443183",
+    "nombre": "Provincia de Osmaniye"
+  },
+  {
+    "id": "740481",
+    "nombre": "Provincia de Rize"
+  },
+  {
+    "id": "740352",
+    "nombre": "Provincia de Sakarya"
+  },
+  {
+    "id": "740263",
+    "nombre": "Provincia de Samsun"
+  },
+  {
+    "id": "298332",
+    "nombre": "Provincia de Sanliurfa"
+  },
+  {
+    "id": "300821",
+    "nombre": "Provincia de Siirt"
+  },
+  {
+    "id": "739598",
+    "nombre": "Provincia de Sinope"
+  },
+  {
+    "id": "300617",
+    "nombre": "Provincia de Sivas"
+  },
+  {
+    "id": "738926",
+    "nombre": "Provincia de Tekirdağ"
+  },
+  {
+    "id": "738742",
+    "nombre": "Provincia de Tokat"
+  },
+  {
+    "id": "738647",
+    "nombre": "Provincia de Trebisonda"
+  },
+  {
+    "id": "298845",
+    "nombre": "Provincia de Tunceli"
+  },
+  {
+    "id": "298298",
+    "nombre": "Provincia de Uşak"
+  },
+  {
+    "id": "298113",
+    "nombre": "Provincia de Van"
+  },
+  {
+    "id": "862469",
+    "nombre": "Provincia de Yalova"
+  },
+  {
+    "id": "296560",
+    "nombre": "Provincia de Yozgat"
+  },
+  {
+    "id": "737021",
+    "nombre": "Provincia de Zonguldak"
+  },
+  {
+    "id": "749778",
+    "nombre": "Provincia de Çanakkale"
+  },
+  {
+    "id": "749747",
+    "nombre": "Provincia de Çankırı"
+  },
+  {
+    "id": "748877",
+    "nombre": "Provincia de Çorum"
+  },
+  {
+    "id": "443189",
+    "nombre": "Provincia de Şırnak"
+  },
+  {
+    "id": "743942",
+    "nombre": "Província de Kars"
+  },
+  {
+    "id": "304041",
+    "nombre": "provincia de Muş"
+  }
+]

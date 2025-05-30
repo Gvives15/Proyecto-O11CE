@@ -1,0 +1,286 @@
+[
+  {
+    "id": "587245",
+    "nombre": "Absheron Rayon"
+  },
+  {
+    "id": "148617",
+    "nombre": "Aghdam Rayon"
+  },
+  {
+    "id": "587376",
+    "nombre": "Aghdash Rayon"
+  },
+  {
+    "id": "148615",
+    "nombre": "Aghjabadi Rayon"
+  },
+  {
+    "id": "828297",
+    "nombre": "Aghstafa Rayon"
+  },
+  {
+    "id": "148442",
+    "nombre": "Astara"
+  },
+  {
+    "id": "587342",
+    "nombre": "Ağsu"
+  },
+  {
+    "id": "587081",
+    "nombre": "Baku City"
+  },
+  {
+    "id": "587010",
+    "nombre": "Balakən"
+  },
+  {
+    "id": "146879",
+    "nombre": "Beylagan Rayon"
+  },
+  {
+    "id": "147310",
+    "nombre": "Biləsuvar"
+  },
+  {
+    "id": "587056",
+    "nombre": "Bərdə"
+  },
+  {
+    "id": "148140",
+    "nombre": "Cəbrayıl"
+  },
+  {
+    "id": "148155",
+    "nombre": "Cəlilabad"
+  },
+  {
+    "id": "586771",
+    "nombre": "Dashkasan Rayon"
+  },
+  {
+    "id": "148107",
+    "nombre": "Füzuli"
+  },
+  {
+    "id": "828298",
+    "nombre": "Ganja City"
+  },
+  {
+    "id": "828301",
+    "nombre": "Gobustan Rayon"
+  },
+  {
+    "id": "586112",
+    "nombre": "Goranboy"
+  },
+  {
+    "id": "586482",
+    "nombre": "Goychay Rayon"
+  },
+  {
+    "id": "585967",
+    "nombre": "Goygol Rayon"
+  },
+  {
+    "id": "627535",
+    "nombre": "Gədəbəy"
+  },
+  {
+    "id": "828315",
+    "nombre": "Hajigabul Rayon"
+  },
+  {
+    "id": "147983",
+    "nombre": "Imishli Rayon"
+  },
+  {
+    "id": "586001",
+    "nombre": "Khachmaz Rayon"
+  },
+  {
+    "id": "828306",
+    "nombre": "Khizi Rayon"
+  },
+  {
+    "id": "585686",
+    "nombre": "Kürdəmir"
+  },
+  {
+    "id": "586047",
+    "nombre": "Kəlbəcər"
+  },
+  {
+    "id": "147613",
+    "nombre": "Lankaran Rayon"
+  },
+  {
+    "id": "409418",
+    "nombre": "Lankaran Sahari"
+  },
+  {
+    "id": "147626",
+    "nombre": "Laçın Rayonu"
+  },
+  {
+    "id": "147610",
+    "nombre": "Lerik"
+  },
+  {
+    "id": "147551",
+    "nombre": "Masallı"
+  },
+  {
+    "id": "828299",
+    "nombre": "Mingacevir City"
+  },
+  {
+    "id": "828300",
+    "nombre": "Naftalan City"
+  },
+  {
+    "id": "147422",
+    "nombre": "Neftchala Rayon"
+  },
+  {
+    "id": "584742",
+    "nombre": "Oghuz Rayon"
+  },
+  {
+    "id": "586290",
+    "nombre": "Qakh Rayon"
+  },
+  {
+    "id": "586087",
+    "nombre": "Qazakh Rayon"
+  },
+  {
+    "id": "585786",
+    "nombre": "Quba Rayon"
+  },
+  {
+    "id": "147694",
+    "nombre": "Qubadli Rayon"
+  },
+  {
+    "id": "585749",
+    "nombre": "Qusar"
+  },
+  {
+    "id": "585738",
+    "nombre": "Qəbələ"
+  },
+  {
+    "id": "147435",
+    "nombre": "República autónoma de Najicheván"
+  },
+  {
+    "id": "147287",
+    "nombre": "Saatly Rayon"
+  },
+  {
+    "id": "147284",
+    "nombre": "Sabirabad"
+  },
+  {
+    "id": "147269",
+    "nombre": "Salyan"
+  },
+  {
+    "id": "828302",
+    "nombre": "Samukh Rayon"
+  },
+  {
+    "id": "585031",
+    "nombre": "Shaki Rayon"
+  },
+  {
+    "id": "828303",
+    "nombre": "Shaki city"
+  },
+  {
+    "id": "585030",
+    "nombre": "Shamakhi Rayon"
+  },
+  {
+    "id": "585059",
+    "nombre": "Shamkir Rayon"
+  },
+  {
+    "id": "409417",
+    "nombre": "Shirvan"
+  },
+  {
+    "id": "409419",
+    "nombre": "Shusha"
+  },
+  {
+    "id": "828304",
+    "nombre": "Siazan Rayon"
+  },
+  {
+    "id": "828305",
+    "nombre": "Sumqayit City"
+  },
+  {
+    "id": "584861",
+    "nombre": "Tovuz"
+  },
+  {
+    "id": "409420",
+    "nombre": "Tərtər"
+  },
+  {
+    "id": "584783",
+    "nombre": "Ujar Rayon"
+  },
+  {
+    "id": "409421",
+    "nombre": "Xankandi Sahari"
+  },
+  {
+    "id": "148449",
+    "nombre": "Xocalı Rayonu"
+  },
+  {
+    "id": "409423",
+    "nombre": "Xocavənd"
+  },
+  {
+    "id": "146962",
+    "nombre": "Yardımlı"
+  },
+  {
+    "id": "828307",
+    "nombre": "Yevlakh City"
+  },
+  {
+    "id": "584650",
+    "nombre": "Yevlakh Rayon"
+  },
+  {
+    "id": "584604",
+    "nombre": "Zaqatala"
+  },
+  {
+    "id": "584583",
+    "nombre": "Zardab Rayon"
+  },
+  {
+    "id": "146900",
+    "nombre": "Zəngilan"
+  },
+  {
+    "id": "586320",
+    "nombre": "İsmayıllı"
+  },
+  {
+    "id": "586725",
+    "nombre": "Şabran"
+  },
+  {
+    "id": "147163",
+    "nombre": "Şuşa Rayonu"
+  }
+]

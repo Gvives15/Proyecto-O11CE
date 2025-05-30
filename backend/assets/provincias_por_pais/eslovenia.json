@@ -1,0 +1,802 @@
+[
+  {
+    "id": "3239282",
+    "nombre": "Beltinci"
+  },
+  {
+    "id": "3344930",
+    "nombre": "Benedikt"
+  },
+  {
+    "id": "3344912",
+    "nombre": "Bistrica ob Sotli"
+  },
+  {
+    "id": "3344899",
+    "nombre": "Bloke"
+  },
+  {
+    "id": "3239073",
+    "nombre": "Borovnica"
+  },
+  {
+    "id": "3239083",
+    "nombre": "Brda"
+  },
+  {
+    "id": "3239071",
+    "nombre": "Brezovica"
+  },
+  {
+    "id": "3344938",
+    "nombre": "Cankova"
+  },
+  {
+    "id": "3202780",
+    "nombre": "Celje"
+  },
+  {
+    "id": "3239110",
+    "nombre": "Cerklje na Gorenjskem"
+  },
+  {
+    "id": "3239091",
+    "nombre": "Cerkno"
+  },
+  {
+    "id": "3344929",
+    "nombre": "Cerkvenjak"
+  },
+  {
+    "id": "8133580",
+    "nombre": "Cirkulane"
+  },
+  {
+    "id": "3195505",
+    "nombre": "Ciudad Maribor"
+  },
+  {
+    "id": "3344913",
+    "nombre": "Dobje"
+  },
+  {
+    "id": "3239193",
+    "nombre": "Dobrepolje"
+  },
+  {
+    "id": "3344914",
+    "nombre": "Dobrna"
+  },
+  {
+    "id": "3239096",
+    "nombre": "Dobrova-Polhov Gradec"
+  },
+  {
+    "id": "3344936",
+    "nombre": "Dobrovnik"
+  },
+  {
+    "id": "3239115",
+    "nombre": "Dol pri Ljubljani"
+  },
+  {
+    "id": "3201252",
+    "nombre": "Dravograd"
+  },
+  {
+    "id": "3239216",
+    "nombre": "Duplek"
+  },
+  {
+    "id": "3239095",
+    "nombre": "Gorenja vas-Poljane"
+  },
+  {
+    "id": "3200196",
+    "nombre": "Gornja Radgona"
+  },
+  {
+    "id": "3239133",
+    "nombre": "Gornji Grad"
+  },
+  {
+    "id": "3239275",
+    "nombre": "Gornji Petrovci"
+  },
+  {
+    "id": "3344939",
+    "nombre": "Grad"
+  },
+  {
+    "id": "3199522",
+    "nombre": "Grosuplje"
+  },
+  {
+    "id": "3344940",
+    "nombre": "Hodos"
+  },
+  {
+    "id": "3344897",
+    "nombre": "Horjul"
+  },
+  {
+    "id": "3239050",
+    "nombre": "Hrpelje-Kozina"
+  },
+  {
+    "id": "3199169",
+    "nombre": "Idrija"
+  },
+  {
+    "id": "3199130",
+    "nombre": "Ilirska Bistrica"
+  },
+  {
+    "id": "3199016",
+    "nombre": "Izola"
+  },
+  {
+    "id": "3198646",
+    "nombre": "Jesenice"
+  },
+  {
+    "id": "3344894",
+    "nombre": "Jezersko"
+  },
+  {
+    "id": "3198364",
+    "nombre": "Kamnik"
+  },
+  {
+    "id": "3239098",
+    "nombre": "Kobarid"
+  },
+  {
+    "id": "3239280",
+    "nombre": "Kobilje"
+  },
+  {
+    "id": "3239078",
+    "nombre": "Komen"
+  },
+  {
+    "id": "3344896",
+    "nombre": "Komenda"
+  },
+  {
+    "id": "3197752",
+    "nombre": "Koper"
+  },
+  {
+    "id": "8133581",
+    "nombre": "Kostanjevica na Krki"
+  },
+  {
+    "id": "3344908",
+    "nombre": "Kostel"
+  },
+  {
+    "id": "3239243",
+    "nombre": "Kozje"
+  },
+  {
+    "id": "3239105",
+    "nombre": "Kranjska Gora"
+  },
+  {
+    "id": "3197146",
+    "nombre": "Krško"
+  },
+  {
+    "id": "3239213",
+    "nombre": "Kungota"
+  },
+  {
+    "id": "3239272",
+    "nombre": "Kuzma"
+  },
+  {
+    "id": "3196759",
+    "nombre": "Laško"
+  },
+  {
+    "id": "3196684",
+    "nombre": "Lenart"
+  },
+  {
+    "id": "3344935",
+    "nombre": "Lendava"
+  },
+  {
+    "id": "3196424",
+    "nombre": "Litija"
+  },
+  {
+    "id": "3239184",
+    "nombre": "Ljubno"
+  },
+  {
+    "id": "3196306",
+    "nombre": "Ljutomer"
+  },
+  {
+    "id": "8133582",
+    "nombre": "Log-Dragomer"
+  },
+  {
+    "id": "3196288",
+    "nombre": "Logatec"
+  },
+  {
+    "id": "3344918",
+    "nombre": "Lovrenc na Pohorju"
+  },
+  {
+    "id": "3239056",
+    "nombre": "Loška Dolina"
+  },
+  {
+    "id": "3239188",
+    "nombre": "Lukovica"
+  },
+  {
+    "id": "8133583",
+    "nombre": "Makole"
+  },
+  {
+    "id": "3344925",
+    "nombre": "Markovci"
+  },
+  {
+    "id": "3239113",
+    "nombre": "Medvode"
+  },
+  {
+    "id": "3194350",
+    "nombre": "Mestna Občina Novo mesto"
+  },
+  {
+    "id": "3195213",
+    "nombre": "Metlika"
+  },
+  {
+    "id": "3239080",
+    "nombre": "Miren-Kostanjevica"
+  },
+  {
+    "id": "3344911",
+    "nombre": "Mirna Peč"
+  },
+  {
+    "id": "3239207",
+    "nombre": "Mislinja"
+  },
+  {
+    "id": "8133584",
+    "nombre": "Mokronog-Trebelno"
+  },
+  {
+    "id": "3194791",
+    "nombre": "Mozirje"
+  },
+  {
+    "id": "3344910",
+    "nombre": "Municipalidad Dolenjske Toplice"
+  },
+  {
+    "id": "3239318",
+    "nombre": "Municipalidad de la Ciudad de Liubliana"
+  },
+  {
+    "id": "3239101",
+    "nombre": "Municipalidad del Cayo"
+  },
+  {
+    "id": "3344926",
+    "nombre": "Municipalidad del Destrnik"
+  },
+  {
+    "id": "3239248",
+    "nombre": "Municipalidad del Dornava"
+  },
+  {
+    "id": "3199296",
+    "nombre": "Municipalidad del Hrastnik"
+  },
+  {
+    "id": "3239069",
+    "nombre": "Municipalidad del Ig"
+  },
+  {
+    "id": "3239279",
+    "nombre": "Municipalidad del Moravske Toplice"
+  },
+  {
+    "id": "3239054",
+    "nombre": "Municipalidad del Pivka"
+  },
+  {
+    "id": "3190949",
+    "nombre": "Municipalidad del Sevnica"
+  },
+  {
+    "id": "3188885",
+    "nombre": "Municipalidad del Trebnje"
+  },
+  {
+    "id": "3239205",
+    "nombre": "Municipalidad del Zreče"
+  },
+  {
+    "id": "3344922",
+    "nombre": "Municipalidade del Hajdina"
+  },
+  {
+    "id": "3204853",
+    "nombre": "Municipio de Ajdovščina"
+  },
+  {
+    "id": "3194647",
+    "nombre": "Murska Sobota"
+  },
+  {
+    "id": "3239179",
+    "nombre": "Muta"
+  },
+  {
+    "id": "3239104",
+    "nombre": "Naklo"
+  },
+  {
+    "id": "3239294",
+    "nombre": "Nazarje"
+  },
+  {
+    "id": "3194451",
+    "nombre": "Nova Gorica"
+  },
+  {
+    "id": "8133579",
+    "nombre": "Občina Apače"
+  },
+  {
+    "id": "3239103",
+    "nombre": "Občina Bled"
+  },
+  {
+    "id": "3239100",
+    "nombre": "Občina Bovec"
+  },
+  {
+    "id": "3344905",
+    "nombre": "Občina Braslovče"
+  },
+  {
+    "id": "3203411",
+    "nombre": "Občina Brežice"
+  },
+  {
+    "id": "3239051",
+    "nombre": "Občina Divača"
+  },
+  {
+    "id": "3201729",
+    "nombre": "Občina Domžale"
+  },
+  {
+    "id": "3239245",
+    "nombre": "Občina Gorišnica"
+  },
+  {
+    "id": "3344920",
+    "nombre": "Občina Hoče-Slivnica"
+  },
+  {
+    "id": "3239191",
+    "nombre": "Občina Ivančna Gorica"
+  },
+  {
+    "id": "3239251",
+    "nombre": "Občina Juršinci"
+  },
+  {
+    "id": "3239086",
+    "nombre": "Občina Kanal ob Soči"
+  },
+  {
+    "id": "3239227",
+    "nombre": "Občina Kidričevo"
+  },
+  {
+    "id": "3197942",
+    "nombre": "Občina Kočevje"
+  },
+  {
+    "id": "3344932",
+    "nombre": "Občina Križevci"
+  },
+  {
+    "id": "3239059",
+    "nombre": "Občina Loški Potok"
+  },
+  {
+    "id": "3239134",
+    "nombre": "Občina Luče"
+  },
+  {
+    "id": "3239229",
+    "nombre": "Občina Majšperk"
+  },
+  {
+    "id": "3239114",
+    "nombre": "Občina Mengeš"
+  },
+  {
+    "id": "3239177",
+    "nombre": "Občina Mežica"
+  },
+  {
+    "id": "3344921",
+    "nombre": "Občina Miklavž na Dravskem Polju"
+  },
+  {
+    "id": "3239132",
+    "nombre": "Občina Moravče"
+  },
+  {
+    "id": "3193964",
+    "nombre": "Občina Ormož"
+  },
+  {
+    "id": "3239241",
+    "nombre": "Občina Podčetrtek"
+  },
+  {
+    "id": "8133585",
+    "nombre": "Občina Poljčane"
+  },
+  {
+    "id": "3239189",
+    "nombre": "Občina Radeče"
+  },
+  {
+    "id": "3239175",
+    "nombre": "Občina Ravne na Koroškem"
+  },
+  {
+    "id": "3344941",
+    "nombre": "Občina Razkrižje"
+  },
+  {
+    "id": "3239224",
+    "nombre": "Občina Rače-Fram"
+  },
+  {
+    "id": "8133587",
+    "nombre": "Občina Renče-Vogrsko"
+  },
+  {
+    "id": "8133586",
+    "nombre": "Občina Rečica ob Savinji"
+  },
+  {
+    "id": "3239234",
+    "nombre": "Občina Rogaška Slatina"
+  },
+  {
+    "id": "3239270",
+    "nombre": "Občina Rogašovci"
+  },
+  {
+    "id": "3239195",
+    "nombre": "Občina Semič"
+  },
+  {
+    "id": "3190944",
+    "nombre": "Občina Sežana"
+  },
+  {
+    "id": "3344900",
+    "nombre": "Občina Sodražica"
+  },
+  {
+    "id": "3344895",
+    "nombre": "Občina Solčava"
+  },
+  {
+    "id": "3239226",
+    "nombre": "Občina Starše"
+  },
+  {
+    "id": "3344928",
+    "nombre": "Občina Sveti Andraž v Slovenskih Goricah"
+  },
+  {
+    "id": "3239259",
+    "nombre": "Občina Sveti Jurij ob Ščavnici"
+  },
+  {
+    "id": "3344937",
+    "nombre": "Občina Tišina"
+  },
+  {
+    "id": "3189037",
+    "nombre": "Občina Tolmin"
+  },
+  {
+    "id": "3344927",
+    "nombre": "Občina Trnovska vas"
+  },
+  {
+    "id": "3188687",
+    "nombre": "Občina Tržič"
+  },
+  {
+    "id": "3239283",
+    "nombre": "Občina Turnišče"
+  },
+  {
+    "id": "3239062",
+    "nombre": "Občina Velike Lašče"
+  },
+  {
+    "id": "3344933",
+    "nombre": "Občina Veržej"
+  },
+  {
+    "id": "3239247",
+    "nombre": "Občina Zavrč"
+  },
+  {
+    "id": "3239286",
+    "nombre": "Občina Črenšovci"
+  },
+  {
+    "id": "3239181",
+    "nombre": "Občina Črna na Koroškem"
+  },
+  {
+    "id": "3344943",
+    "nombre": "Občina Šalovci"
+  },
+  {
+    "id": "3344898",
+    "nombre": "Občina Šempeter-Vrtojba"
+  },
+  {
+    "id": "3239214",
+    "nombre": "Občina Šentilj"
+  },
+  {
+    "id": "3239197",
+    "nombre": "Občina Šentjernej"
+  },
+  {
+    "id": "3239111",
+    "nombre": "Občina Šenčur"
+  },
+  {
+    "id": "3239199",
+    "nombre": "Občina Škocjan"
+  },
+  {
+    "id": "3239066",
+    "nombre": "Občina Škofljica"
+  },
+  {
+    "id": "3190509",
+    "nombre": "Občina Šmarje pri Jelšah"
+  },
+  {
+    "id": "3239187",
+    "nombre": "Občina Šmartno ob Paki"
+  },
+  {
+    "id": "3344942",
+    "nombre": "Občina Šmartno pri Litiji"
+  },
+  {
+    "id": "3239185",
+    "nombre": "Občina Šoštanj"
+  },
+  {
+    "id": "3239200",
+    "nombre": "Občina Štore"
+  },
+  {
+    "id": "3186843",
+    "nombre": "Občina Žalec"
+  },
+  {
+    "id": "3344923",
+    "nombre": "Občina Žetale"
+  },
+  {
+    "id": "3239087",
+    "nombre": "Občina Žiri"
+  },
+  {
+    "id": "3344893",
+    "nombre": "Občina Žirovnica"
+  },
+  {
+    "id": "3344909",
+    "nombre": "Občina Žužemberk"
+  },
+  {
+    "id": "3239285",
+    "nombre": "Odranci"
+  },
+  {
+    "id": "3344915",
+    "nombre": "Oplotnica"
+  },
+  {
+    "id": "3239061",
+    "nombre": "Osilnica"
+  },
+  {
+    "id": "3239215",
+    "nombre": "Pesnica"
+  },
+  {
+    "id": "3193340",
+    "nombre": "Piran"
+  },
+  {
+    "id": "3344924",
+    "nombre": "Podlehnik"
+  },
+  {
+    "id": "3344916",
+    "nombre": "Podvelka"
+  },
+  {
+    "id": "3344906",
+    "nombre": "Polzela"
+  },
+  {
+    "id": "3192672",
+    "nombre": "Postoina"
+  },
+  {
+    "id": "3344907",
+    "nombre": "Prebold"
+  },
+  {
+    "id": "3239107",
+    "nombre": "Preddvor"
+  },
+  {
+    "id": "3344902",
+    "nombre": "Prevalje"
+  },
+  {
+    "id": "3192240",
+    "nombre": "Ptuj"
+  },
+  {
+    "id": "3239268",
+    "nombre": "Puconci"
+  },
+  {
+    "id": "3239262",
+    "nombre": "Radenci"
+  },
+  {
+    "id": "3192120",
+    "nombre": "Radlje ob Dravi"
+  },
+  {
+    "id": "3192062",
+    "nombre": "Radovljica"
+  },
+  {
+    "id": "3191679",
+    "nombre": "Ribnica"
+  },
+  {
+    "id": "3344917",
+    "nombre": "Ribnica na Pohorju"
+  },
+  {
+    "id": "3239237",
+    "nombre": "Rogatec"
+  },
+  {
+    "id": "3239211",
+    "nombre": "Ruše"
+  },
+  {
+    "id": "3344919",
+    "nombre": "Selnica ob Dravi"
+  },
+  {
+    "id": "3190535",
+    "nombre": "Slovenj Gradec"
+  },
+  {
+    "id": "3190533",
+    "nombre": "Slovenska Bistrica"
+  },
+  {
+    "id": "3190529",
+    "nombre": "Slovenske Konjice"
+  },
+  {
+    "id": "3344931",
+    "nombre": "Sveta Ana"
+  },
+  {
+    "id": "3344904",
+    "nombre": "Tabor"
+  },
+  {
+    "id": "3188914",
+    "nombre": "Trbovlje"
+  },
+  {
+    "id": "3344901",
+    "nombre": "Trzin"
+  },
+  {
+    "id": "3189074",
+    "nombre": "Velenje"
+  },
+  {
+    "id": "3344934",
+    "nombre": "Velika Polana"
+  },
+  {
+    "id": "3239231",
+    "nombre": "Videm"
+  },
+  {
+    "id": "3239075",
+    "nombre": "Vipava"
+  },
+  {
+    "id": "3239204",
+    "nombre": "Vitanje"
+  },
+  {
+    "id": "3239112",
+    "nombre": "Vodice"
+  },
+  {
+    "id": "3239202",
+    "nombre": "Vojnik"
+  },
+  {
+    "id": "3344903",
+    "nombre": "Vransko"
+  },
+  {
+    "id": "3187213",
+    "nombre": "Vrhnika"
+  },
+  {
+    "id": "3239180",
+    "nombre": "Vuzenica"
+  },
+  {
+    "id": "3186905",
+    "nombre": "Zagorje ob Savi"
+  },
+  {
+    "id": "3202332",
+    "nombre": "Črnomelj"
+  },
+  {
+    "id": "3191028",
+    "nombre": "Šentjur"
+  },
+  {
+    "id": "3190716",
+    "nombre": "Škofja Loka"
+  },
+  {
+    "id": "3239093",
+    "nombre": "Železniki"
+  }
+]

@@ -1,0 +1,150 @@
+[
+  {
+    "id": "2565340",
+    "nombre": "Abia"
+  },
+  {
+    "id": "2565342",
+    "nombre": "Adamawa"
+  },
+  {
+    "id": "2350813",
+    "nombre": "Akwa Ibom"
+  },
+  {
+    "id": "2349961",
+    "nombre": "Anambra"
+  },
+  {
+    "id": "2347468",
+    "nombre": "Bauchi"
+  },
+  {
+    "id": "2595344",
+    "nombre": "Bayelsa"
+  },
+  {
+    "id": "2347266",
+    "nombre": "Benue"
+  },
+  {
+    "id": "2346794",
+    "nombre": "Borno"
+  },
+  {
+    "id": "2345891",
+    "nombre": "Cross River"
+  },
+  {
+    "id": "2565341",
+    "nombre": "Delta"
+  },
+  {
+    "id": "2595345",
+    "nombre": "Ebonyi"
+  },
+  {
+    "id": "2565343",
+    "nombre": "Edo"
+  },
+  {
+    "id": "2595346",
+    "nombre": "Ekiti"
+  },
+  {
+    "id": "2565344",
+    "nombre": "Enugu"
+  },
+  {
+    "id": "2335196",
+    "nombre": "Estado de Kano"
+  },
+  {
+    "id": "2332453",
+    "nombre": "Estado de Lagos"
+  },
+  {
+    "id": "2595347",
+    "nombre": "Gombe"
+  },
+  {
+    "id": "2337542",
+    "nombre": "Imo"
+  },
+  {
+    "id": "2565345",
+    "nombre": "Jigawa"
+  },
+  {
+    "id": "2335722",
+    "nombre": "Kaduna"
+  },
+  {
+    "id": "2334797",
+    "nombre": "Katsina"
+  },
+  {
+    "id": "2597363",
+    "nombre": "Kebbi"
+  },
+  {
+    "id": "2597364",
+    "nombre": "Kogi"
+  },
+  {
+    "id": "2332785",
+    "nombre": "Kwara"
+  },
+  {
+    "id": "2595348",
+    "nombre": "Nasarawa"
+  },
+  {
+    "id": "2328925",
+    "nombre": "Níger"
+  },
+  {
+    "id": "2327546",
+    "nombre": "Ogun"
+  },
+  {
+    "id": "2326168",
+    "nombre": "Ondo"
+  },
+  {
+    "id": "2597365",
+    "nombre": "Osun"
+  },
+  {
+    "id": "2325190",
+    "nombre": "Oyo"
+  },
+  {
+    "id": "2324828",
+    "nombre": "Plateau"
+  },
+  {
+    "id": "2324433",
+    "nombre": "Rivers"
+  },
+  {
+    "id": "2322907",
+    "nombre": "Sokoto State"
+  },
+  {
+    "id": "2597366",
+    "nombre": "Taraba"
+  },
+  {
+    "id": "2352776",
+    "nombre": "Territorio de la Capital Federal"
+  },
+  {
+    "id": "2597367",
+    "nombre": "Yobe"
+  },
+  {
+    "id": "2595349",
+    "nombre": "Zamfara"
+  }
+]

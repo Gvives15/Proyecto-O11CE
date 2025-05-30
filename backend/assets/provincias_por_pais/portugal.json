@@ -1,0 +1,82 @@
+[
+  {
+    "id": "2742610",
+    "nombre": "Aveiro"
+  },
+  {
+    "id": "3411865",
+    "nombre": "Azores"
+  },
+  {
+    "id": "2270984",
+    "nombre": "Beja"
+  },
+  {
+    "id": "2742031",
+    "nombre": "Braga"
+  },
+  {
+    "id": "2742026",
+    "nombre": "Braganza"
+  },
+  {
+    "id": "2269513",
+    "nombre": "Castelo Branco"
+  },
+  {
+    "id": "2740636",
+    "nombre": "Coimbra"
+  },
+  {
+    "id": "2262961",
+    "nombre": "Distrito de Setúbal"
+  },
+  {
+    "id": "2268337",
+    "nombre": "Faro"
+  },
+  {
+    "id": "2738782",
+    "nombre": "Guarda"
+  },
+  {
+    "id": "2267094",
+    "nombre": "Leiria"
+  },
+  {
+    "id": "2267056",
+    "nombre": "Lisboa"
+  },
+  {
+    "id": "2593105",
+    "nombre": "Madeira"
+  },
+  {
+    "id": "2735941",
+    "nombre": "Oporto"
+  },
+  {
+    "id": "2264507",
+    "nombre": "Portalegre"
+  },
+  {
+    "id": "2263478",
+    "nombre": "Santarém"
+  },
+  {
+    "id": "2732772",
+    "nombre": "Viana do Castelo"
+  },
+  {
+    "id": "2732437",
+    "nombre": "Vila Real"
+  },
+  {
+    "id": "2732264",
+    "nombre": "Viseu"
+  },
+  {
+    "id": "2268404",
+    "nombre": "Évora"
+  }
+]

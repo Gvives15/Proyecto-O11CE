@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+
+{% block title %}Dashboard - MigPsicologia{% endblock %}
+
+{% block content %}
+<div class="content-header">
+  <h2>Panel de Control</h2>
+  <ol class="breadcrumb">
+    <li><a href="{% url 'dashboard' %}">Inicio</a></li>
+    <li class="active">Dashboard</li>
+  </ol>
+</div>
+
+<!-- Alert Messages -->
+{% if messages %}
+  {% for message in messages %}
+    <div class="alert alert-{{ message.tags }}" id="alert-message">
+      {{ message }}
+    </div>
+  {% endfor %}
+{% else %}
+  <div class="alert alert-success" id="alert-message">
+    ¡Bienvenido al panel de administración!
+  </div>
+{% endif %}
+
+<!-- Dashboard Cards -->
+<div class="dashboard-cards">
+  <div class="card card-primary">
+    <div class="card-inner">
+      <h3>{{ total_patients }}</h3>
+      <p>Pacientes Totales</p>
+    </div>
+    <a href="{% url 'patients_list' %}" class="card-footer">
+      Más información <i class="fas fa-arrow-circle-right"></i>
+    </a>
+  </div>
+
+  <div class="card card-success">
+    <div class="card-inner">
+      <h3>{{ today_appointments }}</h3>
+      <p>Citas Hoy</p>
+    </div>
+    <a href="{% url 'appointments_today' %}" class="card-footer">
+      Más información <i class="fas fa-arrow-circle-right"></i>
+    </a>
+  </div>
+
+  <div class="card card-warning">
+    <div class="card-inner">
+      <h3>{{ total_articles }}</h3>
+      <p>Artículos Publicados</p>
+    </div>
+    <a href="{% url 'articles_list' %}" class="card-footer">
+      Más información <i class="fas fa-arrow-circle-right"></i>
+    </a>
+  </div>
+
+  <div class="card card-danger">
+    <div class="card-inner">
+      <h3>{{ active_courses }}</h3>
+      <p>Cursos Activos</p>
+    </div>
+    <a href="{% url 'courses_list' %}" class="card-footer">
+      Más información <i class="fas fa-arrow-circle-right"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Main Content Panels -->
+<div class="content-panels">
+  <div class="panel">
+    <div class="panel-header">
+      <h3>Actividad Reciente</h3>
+    </div>
+    <div class="panel-body">
+      <ul class="activity-list">
+        {% for activity in recent_activities %}
+          <li>
+            <i class="fas fa-{{ activity.icon }} activity-icon bg-{{ activity.type }}"></i>
+            <div class="activity-details">
+              <span class="activity-time">{{ activity.timestamp|timesince }}</span>
+              <h4 class="activity-title">{{ activity.title }}</h4>
+              <p>{{ activity.description }}</p>
+            </div>
+          </li>
+        {% empty %}
+          <li>No hay actividades recientes</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-header">
+      <h3>Próximas Citas</h3>
+    </div>
+    <div class="panel-body">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Paciente</th>
+            <th>Fecha</th>
+            <th>Hora</th>
+            <th>Estado</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for appointment in upcoming_appointments %}
+            <tr>
+              <td>{{ appointment.patient.full_name }}</td>
+              <td>{{ appointment.date|date:"d/m/Y" }}</td>
+              <td>{{ appointment.time|time:"H:i" }}</td>
+              <td>
+                <span class="badge bg-{{ appointment.status_class }}">
+                  {{ appointment.get_status_display }}
+                </span>
+              </td>
+            </tr>
+          {% empty %}
+            <tr>
+              <td colspan="4">No hay citas próximas</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+{% endblock %}

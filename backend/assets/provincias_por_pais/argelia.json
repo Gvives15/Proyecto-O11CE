@@ -1,0 +1,234 @@
+[
+  {
+    "id": "2507475",
+    "nombre": "Argel"
+  },
+  {
+    "id": "2507899",
+    "nombre": "Aïn Témouchent"
+  },
+  {
+    "id": "12226383",
+    "nombre": "Bordj Badji Mokhtar"
+  },
+  {
+    "id": "12226388",
+    "nombre": "Djanet"
+  },
+  {
+    "id": "12226389",
+    "nombre": "El Menia"
+  },
+  {
+    "id": "12226391",
+    "nombre": "El Mghair"
+  },
+  {
+    "id": "12226386",
+    "nombre": "In Guezzam"
+  },
+  {
+    "id": "12226387",
+    "nombre": "In Salah"
+  },
+  {
+    "id": "2486512",
+    "nombre": "Naama"
+  },
+  {
+    "id": "12226392",
+    "nombre": "Ouled Djellal"
+  },
+  {
+    "id": "2508807",
+    "nombre": "Provincia de Adrar"
+  },
+  {
+    "id": "2506994",
+    "nombre": "Provincia de Annaba"
+  },
+  {
+    "id": "2508226",
+    "nombre": "Provincia de Aïn Defla"
+  },
+  {
+    "id": "2505569",
+    "nombre": "Provincia de Batna"
+  },
+  {
+    "id": "2503822",
+    "nombre": "Provincia de Biskra"
+  },
+  {
+    "id": "2503765",
+    "nombre": "Provincia de Blida"
+  },
+  {
+    "id": "2503699",
+    "nombre": "Provincia de Bordj Bou Arréridj"
+  },
+  {
+    "id": "2502951",
+    "nombre": "Provincia de Bouira"
+  },
+  {
+    "id": "2505525",
+    "nombre": "Provincia de Béchar"
+  },
+  {
+    "id": "12226385",
+    "nombre": "Provincia de Béni Abbès"
+  },
+  {
+    "id": "2501296",
+    "nombre": "Provincia de Chlef"
+  },
+  {
+    "id": "2501147",
+    "nombre": "Provincia de Constantina"
+  },
+  {
+    "id": "2500013",
+    "nombre": "Provincia de Djelfa"
+  },
+  {
+    "id": "2498541",
+    "nombre": "Provincia de El Bayadh"
+  },
+  {
+    "id": "2497406",
+    "nombre": "Provincia de El Oued"
+  },
+  {
+    "id": "2497322",
+    "nombre": "Provincia de El Tarf"
+  },
+  {
+    "id": "2495659",
+    "nombre": "Provincia de Guelma"
+  },
+  {
+    "id": "2493455",
+    "nombre": "Provincia de Illizi"
+  },
+  {
+    "id": "2492910",
+    "nombre": "Provincia de Jijel"
+  },
+  {
+    "id": "2491887",
+    "nombre": "Provincia de Khenchela"
+  },
+  {
+    "id": "2491188",
+    "nombre": "Provincia de Laghouat"
+  },
+  {
+    "id": "2486682",
+    "nombre": "Provincia de M'Sila"
+  },
+  {
+    "id": "2487449",
+    "nombre": "Provincia de Mila"
+  },
+  {
+    "id": "2487130",
+    "nombre": "Provincia de Mostaganem"
+  },
+  {
+    "id": "2490095",
+    "nombre": "Provincia de Muaskar"
+  },
+  {
+    "id": "2485920",
+    "nombre": "Provincia de Orán"
+  },
+  {
+    "id": "2485794",
+    "nombre": "Provincia de Ouargla"
+  },
+  {
+    "id": "2484618",
+    "nombre": "Provincia de Oum el-Bouaghi"
+  },
+  {
+    "id": "2483666",
+    "nombre": "Provincia de Relizan"
+  },
+  {
+    "id": "2481001",
+    "nombre": "Provincia de Sidi Bel Abbes"
+  },
+  {
+    "id": "2479532",
+    "nombre": "Provincia de Skikda"
+  },
+  {
+    "id": "2479213",
+    "nombre": "Provincia de Souk Ahras"
+  },
+  {
+    "id": "2481696",
+    "nombre": "Provincia de Sétif"
+  },
+  {
+    "id": "2478217",
+    "nombre": "Provincia de Tamanghasset"
+  },
+  {
+    "id": "2476893",
+    "nombre": "Provincia de Tiaret"
+  },
+  {
+    "id": "2476302",
+    "nombre": "Provincia de Tinduf"
+  },
+  {
+    "id": "2475858",
+    "nombre": "Provincia de Tissemsilt"
+  },
+  {
+    "id": "2475741",
+    "nombre": "Provincia de Tizi Ouzou"
+  },
+  {
+    "id": "2475683",
+    "nombre": "Provincia de Tlemecén"
+  },
+  {
+    "id": "2477457",
+    "nombre": "Provincia de Tébessa"
+  },
+  {
+    "id": "12226384",
+    "nombre": "Timimoun"
+  },
+  {
+    "id": "12226390",
+    "nombre": "Touggourt"
+  },
+  {
+    "id": "2505325",
+    "nombre": "Wilaya de Bejaïa"
+  },
+  {
+    "id": "2502638",
+    "nombre": "Wilaya de Boumerdes"
+  },
+  {
+    "id": "2496045",
+    "nombre": "Wilaya de Ghardaïa"
+  },
+  {
+    "id": "2488831",
+    "nombre": "Wilaya de Médéa"
+  },
+  {
+    "id": "2482557",
+    "nombre": "Wilaya de Saïda"
+  },
+  {
+    "id": "2476027",
+    "nombre": "Wilaya de Tipaza"
+  }
+]

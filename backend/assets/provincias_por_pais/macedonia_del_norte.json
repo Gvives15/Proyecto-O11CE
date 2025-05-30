@@ -1,0 +1,286 @@
+[
+  {
+    "id": "863485",
+    "nombre": "Berovo"
+  },
+  {
+    "id": "863486",
+    "nombre": "Bitola"
+  },
+  {
+    "id": "863834",
+    "nombre": "Bogovinje"
+  },
+  {
+    "id": "863843",
+    "nombre": "Debar"
+  },
+  {
+    "id": "863846",
+    "nombre": "Demir Hisar"
+  },
+  {
+    "id": "862961",
+    "nombre": "Demir Kapija"
+  },
+  {
+    "id": "863854",
+    "nombre": "Gevgelija"
+  },
+  {
+    "id": "863855",
+    "nombre": "Gostivar"
+  },
+  {
+    "id": "11398357",
+    "nombre": "Grad Skopje"
+  },
+  {
+    "id": "863861",
+    "nombre": "Kavadarci"
+  },
+  {
+    "id": "789090",
+    "nombre": "Kratovo"
+  },
+  {
+    "id": "863869",
+    "nombre": "Kriva Palanka"
+  },
+  {
+    "id": "863873",
+    "nombre": "Kumanovo"
+  },
+  {
+    "id": "863877",
+    "nombre": "Makedonski Brod"
+  },
+  {
+    "id": "863488",
+    "nombre": "Mogila"
+  },
+  {
+    "id": "862950",
+    "nombre": "Municipalidad de Bogdanci"
+  },
+  {
+    "id": "862946",
+    "nombre": "Municipalidad de Bosilovo"
+  },
+  {
+    "id": "7056271",
+    "nombre": "Municipalidad de Debarca"
+  },
+  {
+    "id": "863849",
+    "nombre": "Municipalidad de Dolneni"
+  },
+  {
+    "id": "862974",
+    "nombre": "Municipalidad de Gradsko"
+  },
+  {
+    "id": "863856",
+    "nombre": "Municipalidad de Ilinden"
+  },
+  {
+    "id": "862960",
+    "nombre": "Municipalidad de Karbinci"
+  },
+  {
+    "id": "862975",
+    "nombre": "Municipalidad de Lozovo"
+  },
+  {
+    "id": "862956",
+    "nombre": "Municipalidad de Makedonska Kamenica"
+  },
+  {
+    "id": "863892",
+    "nombre": "Municipalidad de Mavrovo y Rostuša"
+  },
+  {
+    "id": "863887",
+    "nombre": "Municipalidad de Plasnica"
+  },
+  {
+    "id": "786339",
+    "nombre": "Municipalidad de Resen"
+  },
+  {
+    "id": "862973",
+    "nombre": "Municipalidad de Rosoman"
+  },
+  {
+    "id": "863905",
+    "nombre": "Municipalidad de Sveti Nikole"
+  },
+  {
+    "id": "863906",
+    "nombre": "Municipalidad de Tearce"
+  },
+  {
+    "id": "784732",
+    "nombre": "Municipalidad de Valandovo"
+  },
+  {
+    "id": "862958",
+    "nombre": "Municipalidad de Zrnovci"
+  },
+  {
+    "id": "863838",
+    "nombre": "Municipalidad de Čaška"
+  },
+  {
+    "id": "862977",
+    "nombre": "Municipalidad de Češinovo-Obleševo"
+  },
+  {
+    "id": "863835",
+    "nombre": "Municipio de Brvenica"
+  },
+  {
+    "id": "863858",
+    "nombre": "Municipio de Jegunovce"
+  },
+  {
+    "id": "863881",
+    "nombre": "Negotino"
+  },
+  {
+    "id": "863468",
+    "nombre": "Novaci"
+  },
+  {
+    "id": "862945",
+    "nombre": "Novo Selo"
+  },
+  {
+    "id": "863883",
+    "nombre": "Ohrid"
+  },
+  {
+    "id": "863831",
+    "nombre": "Opština Aračinovo"
+  },
+  {
+    "id": "863841",
+    "nombre": "Opština Centar Župa"
+  },
+  {
+    "id": "863844",
+    "nombre": "Opština Delčevo"
+  },
+  {
+    "id": "862949",
+    "nombre": "Opština Dojran"
+  },
+  {
+    "id": "863862",
+    "nombre": "Opština Kičevo"
+  },
+  {
+    "id": "862953",
+    "nombre": "Opština Konče"
+  },
+  {
+    "id": "863865",
+    "nombre": "Opština Kočani"
+  },
+  {
+    "id": "863870",
+    "nombre": "Opština Krivogaštani"
+  },
+  {
+    "id": "863871",
+    "nombre": "Opština Kruševo"
+  },
+  {
+    "id": "863875",
+    "nombre": "Opština Lipkovo"
+  },
+  {
+    "id": "862938",
+    "nombre": "Opština Pehčevo"
+  },
+  {
+    "id": "863889",
+    "nombre": "Opština Probištip"
+  },
+  {
+    "id": "863890",
+    "nombre": "Opština Radoviš"
+  },
+  {
+    "id": "863891",
+    "nombre": "Opština Rankovce"
+  },
+  {
+    "id": "863896",
+    "nombre": "Opština Sopište"
+  },
+  {
+    "id": "863899",
+    "nombre": "Opština Staro Nagoričane"
+  },
+  {
+    "id": "863903",
+    "nombre": "Opština Studeničani"
+  },
+  {
+    "id": "863911",
+    "nombre": "Opština Vevčani"
+  },
+  {
+    "id": "863914",
+    "nombre": "Opština Vrapčište"
+  },
+  {
+    "id": "863842",
+    "nombre": "Opština Čučer-Sandevo"
+  },
+  {
+    "id": "863900",
+    "nombre": "Opština Štip"
+  },
+  {
+    "id": "863919",
+    "nombre": "Opština Želino"
+  },
+  {
+    "id": "863886",
+    "nombre": "Petrovec"
+  },
+  {
+    "id": "863888",
+    "nombre": "Prilep"
+  },
+  {
+    "id": "863901",
+    "nombre": "Struga"
+  },
+  {
+    "id": "863902",
+    "nombre": "Strumica"
+  },
+  {
+    "id": "863907",
+    "nombre": "Tetovo"
+  },
+  {
+    "id": "862947",
+    "nombre": "Vasilevo"
+  },
+  {
+    "id": "863909",
+    "nombre": "Veles"
+  },
+  {
+    "id": "863912",
+    "nombre": "Vinica"
+  },
+  {
+    "id": "863918",
+    "nombre": "Zelenikovo"
+  }
+]

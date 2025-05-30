@@ -1,0 +1,314 @@
+[
+  {
+    "id": "4562487",
+    "nombre": "Adjuntas"
+  },
+  {
+    "id": "4562503",
+    "nombre": "Aguada"
+  },
+  {
+    "id": "4562512",
+    "nombre": "Aguadilla"
+  },
+  {
+    "id": "4562516",
+    "nombre": "Aguas Buenas"
+  },
+  {
+    "id": "4562531",
+    "nombre": "Aibonito"
+  },
+  {
+    "id": "4562640",
+    "nombre": "Arecibo"
+  },
+  {
+    "id": "4562682",
+    "nombre": "Arroyo"
+  },
+  {
+    "id": "4562605",
+    "nombre": "Añasco"
+  },
+  {
+    "id": "4562771",
+    "nombre": "Barceloneta"
+  },
+  {
+    "id": "4562779",
+    "nombre": "Barranquitas"
+  },
+  {
+    "id": "4562837",
+    "nombre": "Bayamón"
+  },
+  {
+    "id": "4562997",
+    "nombre": "Cabo Rojo"
+  },
+  {
+    "id": "4563011",
+    "nombre": "Caguas"
+  },
+  {
+    "id": "4563065",
+    "nombre": "Camuy"
+  },
+  {
+    "id": "4563169",
+    "nombre": "Canóvanas"
+  },
+  {
+    "id": "4563244",
+    "nombre": "Carolina"
+  },
+  {
+    "id": "4563299",
+    "nombre": "Cataño"
+  },
+  {
+    "id": "4563309",
+    "nombre": "Cayey"
+  },
+  {
+    "id": "4563380",
+    "nombre": "Ceiba"
+  },
+  {
+    "id": "4563774",
+    "nombre": "Ciales"
+  },
+  {
+    "id": "4563778",
+    "nombre": "Cidra"
+  },
+  {
+    "id": "4563812",
+    "nombre": "Coamo"
+  },
+  {
+    "id": "4563921",
+    "nombre": "Comerío"
+  },
+  {
+    "id": "4564004",
+    "nombre": "Corozal"
+  },
+  {
+    "id": "4564071",
+    "nombre": "Culebra"
+  },
+  {
+    "id": "4564134",
+    "nombre": "Dorado"
+  },
+  {
+    "id": "4564949",
+    "nombre": "Fajardo"
+  },
+  {
+    "id": "4564993",
+    "nombre": "Florida"
+  },
+  {
+    "id": "4565107",
+    "nombre": "Guayama"
+  },
+  {
+    "id": "4565112",
+    "nombre": "Guayanilla"
+  },
+  {
+    "id": "4565120",
+    "nombre": "Guaynabo"
+  },
+  {
+    "id": "4565126",
+    "nombre": "Gurabo"
+  },
+  {
+    "id": "4565091",
+    "nombre": "Guánica"
+  },
+  {
+    "id": "4565348",
+    "nombre": "Hatillo"
+  },
+  {
+    "id": "4565381",
+    "nombre": "Hormigueros"
+  },
+  {
+    "id": "4565449",
+    "nombre": "Humacao"
+  },
+  {
+    "id": "4565581",
+    "nombre": "Isabela"
+  },
+  {
+    "id": "4565684",
+    "nombre": "Jayuya"
+  },
+  {
+    "id": "4565713",
+    "nombre": "Juana Díaz"
+  },
+  {
+    "id": "4565720",
+    "nombre": "Juncos"
+  },
+  {
+    "id": "4565900",
+    "nombre": "Lajas"
+  },
+  {
+    "id": "4565910",
+    "nombre": "Lares"
+  },
+  {
+    "id": "4565961",
+    "nombre": "Las Marías"
+  },
+  {
+    "id": "4565981",
+    "nombre": "Las Piedras"
+  },
+  {
+    "id": "4566025",
+    "nombre": "Loíza"
+  },
+  {
+    "id": "4566106",
+    "nombre": "Luquillo"
+  },
+  {
+    "id": "4566138",
+    "nombre": "Manatí"
+  },
+  {
+    "id": "4566180",
+    "nombre": "Maricao"
+  },
+  {
+    "id": "4566209",
+    "nombre": "Maunabo"
+  },
+  {
+    "id": "4566217",
+    "nombre": "Mayagüez"
+  },
+  {
+    "id": "4566272",
+    "nombre": "Moca"
+  },
+  {
+    "id": "4566334",
+    "nombre": "Morovis"
+  },
+  {
+    "id": "4566397",
+    "nombre": "Naguabo"
+  },
+  {
+    "id": "4566403",
+    "nombre": "Naranjito"
+  },
+  {
+    "id": "4566456",
+    "nombre": "Orocovis"
+  },
+  {
+    "id": "4566654",
+    "nombre": "Patillas"
+  },
+  {
+    "id": "4566689",
+    "nombre": "Peñuelas"
+  },
+  {
+    "id": "4566886",
+    "nombre": "Ponce"
+  },
+  {
+    "id": "4567734",
+    "nombre": "Quebradillas"
+  },
+  {
+    "id": "4567727",
+    "nombre": "Rincón"
+  },
+  {
+    "id": "4567823",
+    "nombre": "Río Grande"
+  },
+  {
+    "id": "4568015",
+    "nombre": "Sabana Grande"
+  },
+  {
+    "id": "4568043",
+    "nombre": "Salinas"
+  },
+  {
+    "id": "4568105",
+    "nombre": "San Germán"
+  },
+  {
+    "id": "4568138",
+    "nombre": "San Juan"
+  },
+  {
+    "id": "4568150",
+    "nombre": "San Lorenzo"
+  },
+  {
+    "id": "4568177",
+    "nombre": "San Sebastián"
+  },
+  {
+    "id": "4568213",
+    "nombre": "Santa Isabel"
+  },
+  {
+    "id": "4568404",
+    "nombre": "Toa Alta"
+  },
+  {
+    "id": "4568408",
+    "nombre": "Toa Baja"
+  },
+  {
+    "id": "4568452",
+    "nombre": "Trujillo Alto"
+  },
+  {
+    "id": "4568491",
+    "nombre": "Utuado"
+  },
+  {
+    "id": "4568529",
+    "nombre": "Vega Alta"
+  },
+  {
+    "id": "4568534",
+    "nombre": "Vega Baja"
+  },
+  {
+    "id": "4568924",
+    "nombre": "Vieques"
+  },
+  {
+    "id": "4568684",
+    "nombre": "Villalba"
+  },
+  {
+    "id": "4568909",
+    "nombre": "Yabucoa"
+  },
+  {
+    "id": "4568918",
+    "nombre": "Yauco"
+  }
+]
