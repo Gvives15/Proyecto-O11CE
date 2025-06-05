@@ -1,13 +1,11 @@
-from django.shortcuts import render
-from rest_framework import viewsets
 from .serializers import CategoriaSerializer, SubcategoriaSerializer, ProductoSerializer, MovimientoStockSerializer
 from rest_framework.permissions import IsAuthenticated
 import pandas as pd
-from unidecode import unidecode
 from rest_framework.views import APIView
 from rest_framework.parsers import MultiPartParser
 from rest_framework.response import Response
 from rest_framework import status
+from rest_framework import viewsets
 from .models import Producto, Categoria, Subcategoria, MovimientoStock
 from apps.empresa.models import Almacen
 from apps.proveedores.models import Proveedor, Compra
@@ -16,7 +14,7 @@ from .filters import ProductoFilter
 import openpyxl
 from openpyxl.utils import get_column_letter
 from django.http import HttpResponse
-from .models import Producto
+from .utils import limpiar_texto
 
 
 class ProductoViewSet(viewsets.ModelViewSet):
@@ -41,12 +39,6 @@ class MovimientoStockViewSet(viewsets.ModelViewSet):
     queryset = MovimientoStock.objects.all()
     serializer_class = MovimientoStockSerializer
     permission_classes = [IsAuthenticated]
-
-
-def limpiar_texto(valor):
-    if pd.isnull(valor):
-        return ''
-    return unidecode(str(valor).strip().lower())
 
 class CargaMasivaProductosView(APIView):
     parser_classes = [MultiPartParser]
