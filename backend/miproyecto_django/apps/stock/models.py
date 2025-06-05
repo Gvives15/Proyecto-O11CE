@@ -3,14 +3,8 @@ from django.core.exceptions import ValidationError
 from datetime import date
 from apps.empresa.models import Almacen
 from apps.user.models import CustomUser
-import unicodedata
+from .utils import limpiar_texto
 
-def limpiar_texto(texto):
-    if texto is None:
-        return ''
-    texto = texto.strip()
-    texto = unicodedata.normalize('NFKD', texto).encode('ASCII', 'ignore').decode('utf-8')
-    return texto.lower()
 
 class Categoria(models.Model):
     nombre = models.CharField(max_length=100, default='General', unique=True)
