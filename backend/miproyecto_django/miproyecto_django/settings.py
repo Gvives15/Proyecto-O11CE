@@ -48,7 +48,7 @@ INSTALLED_APPS = [
     'sass_processor',
     'rest_framework',
     'corsheaders',
-
+    "django_filters",
 
     # 4️⃣ Tus apps
     'apps.empresa.apps.EmpresaConfig',
@@ -56,6 +56,8 @@ INSTALLED_APPS = [
     'apps.proveedores.apps.ProveedoresConfig',
     'apps.core.apps.CoreConfig',
     'apps.stock.apps.StockConfig',
+    'apps.ventas.apps.VentasConfig',
+    'apps.caja.apps.CajaConfig',
 ]
 
 
@@ -188,7 +190,13 @@ DATA_DIR = os.path.join(BASE_DIR, 'assets')
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticated',  # Exige login por defecto
-        'django_filters.rest_framework.DjangoFilterBackend'
+    ],
+    #poner en produccion
+    #"DEFAULT_RENDERER_CLASSES": [
+    #    "rest_framework.renderers.JSONRenderer",
+    #],
+    'DEFAULT_FILTER_BACKENDS': [
+        'django_filters.rest_framework.DjangoFilterBackend',
     ],
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.SessionAuthentication',

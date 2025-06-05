@@ -1,14 +1,29 @@
 from django.db import models
-
-# Create your models here.
-from django.db import models
 from django.core.exceptions import ValidationError
 from datetime import date
 from apps.empresa.models import Almacen
+from apps.user.models import CustomUser
+import unicodedata
+
+def limpiar_texto(texto):
+    if texto is None:
+        return ''
+    texto = texto.strip()
+    texto = unicodedata.normalize('NFKD', texto).encode('ASCII', 'ignore').decode('utf-8')
+    return texto.lower()
 
 class Categoria(models.Model):
-    nombre = models.CharField(max_length=100, default='General')
+    nombre = models.CharField(max_length=100, default='General', unique=True)
     descripcion = models.TextField(blank=True, default='')
+
+    def clean(self):
+        self.nombre = limpiar_texto(self.nombre)
+        if Categoria.objects.exclude(pk=self.pk).filter(nombre=self.nombre).exists():
+            raise ValidationError("Ya existe una categoría con ese nombre (normalizado).")
+
+    def save(self, *args, **kwargs):
+        self.full_clean()  # Ejecuta las validaciones y limpieza
+        super().save(*args, **kwargs)
 
     def __str__(self):
         return self.nombre
@@ -17,22 +32,20 @@ class Subcategoria(models.Model):
     categoria = models.ForeignKey(Categoria, on_delete=models.CASCADE, related_name='subcategorias')
     nombre = models.CharField(max_length=100, default='Sin subcategoría')
 
+    def clean(self):
+        self.nombre = limpiar_texto(self.nombre)
+        # Validar que no exista otra subcategoría con mismo nombre y misma categoría
+        if Subcategoria.objects.exclude(pk=self.pk).filter(
+            categoria=self.categoria, nombre=self.nombre
+        ).exists():
+            raise ValidationError("Ya existe una subcategoría con ese nombre para esta categoría.")
+
+    def save(self, *args, **kwargs):
+        self.full_clean()
+        super().save(*args, **kwargs)
+
     def __str__(self):
         return self.nombre
-
-
-import unicodedata
-from django.db import models
-from django.core.exceptions import ValidationError
-from datetime import date
-from apps.empresa.models import Almacen
-
-def limpiar_texto(texto):
-    if texto is None:
-        return ''
-    texto = texto.strip()
-    texto = unicodedata.normalize('NFKD', texto).encode('ASCII', 'ignore').decode('utf-8')
-    return texto.lower()
 
 class Producto(models.Model):
     nombre = models.CharField(max_length=255, default='Producto sin nombre')
@@ -80,23 +93,17 @@ class Producto(models.Model):
     def __str__(self):
         return f'{self.nombre.capitalize()} ({self.codigo.upper()})'
 
-from django.db import models
-from django.core.exceptions import ValidationError
-#from apps.user.models import usuario
-from apps.stock.models import Producto
-from datetime import date
 
 class MovimientoStock(models.Model):
     ENTRADA = 'entrada'
     SALIDA = 'salida'
     TIPO_CHOICES = [(ENTRADA, 'Entrada'), (SALIDA, 'Salida')]
-
     producto = models.ForeignKey(Producto, on_delete=models.CASCADE)
     tipo = models.CharField(max_length=10, choices=TIPO_CHOICES)
     cantidad = models.PositiveIntegerField()
     fecha = models.DateTimeField(auto_now_add=True)
     motivo = models.CharField(max_length=100, blank=True)
-    #usuario = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
+    usuario = models.ForeignKey(CustomUser, on_delete=models.SET_NULL, null=True)
 
     def clean(self):
         if not self.tipo in dict(self.TIPO_CHOICES):
@@ -124,11 +131,13 @@ class MovimientoStock(models.Model):
             self.producto.stock -= self.cantidad
         self.producto.save()
 
-        super().save(*args, **kwargs)
+        super().save(*args, **kwargs) 
 
     def __str__(self):
         return f"{self.tipo.upper()} - {self.producto.nombre} x{self.cantidad}"
 
+from django.db import models
+from django.conf import settings
 
 class AlertaSistema(models.Model):
     TIPO_CHOICES = [
@@ -136,13 +145,43 @@ class AlertaSistema(models.Model):
         ('STOCK_NEGATIVO', 'Stock negativo'),
         ('SIN_CATEGORIA', 'Producto sin categoría'),
         ('VENCIMIENTO', 'Producto por vencer'),
+        # agrega más tipos o parametriza en una tabla aparte si hay muchos
+    ]
+    URGENCIA_CHOICES = [
+        ('baja', 'Baja'),
+        ('media', 'Media'),
+        ('alta', 'Alta'),
+    ]
+    ESTADO_CHOICES = [
+        ('pendiente', 'Pendiente'),
+        ('procesando', 'Procesando'),
+        ('resuelta', 'Resuelta'),
+        ('descartada', 'Descartada'),
     ]
 
     tipo = models.CharField(max_length=30, choices=TIPO_CHOICES)
-    referencia = models.CharField(max_length=255)  # nombre del producto afectado
-    mensaje = models.TextField()
+    urgencia = models.CharField(max_length=10, choices=URGENCIA_CHOICES, default='media')
+    estado = models.CharField(max_length=15, choices=ESTADO_CHOICES, default='pendiente')
+
+    producto = models.ForeignKey('Producto', null=True, blank=True, on_delete=models.SET_NULL)
+    almacen = models.ForeignKey('empresa.Almacen', null=True, blank=True, on_delete=models.SET_NULL)
+    movimiento = models.ForeignKey('MovimientoStock', null=True, blank=True, on_delete=models.SET_NULL)
+    referencia_externa = models.CharField(max_length=255, blank=True, null=True)
+
+    resumen = models.CharField(max_length=255)  # Mensaje corto para lista
+    detalle = models.TextField(blank=True, default='')  # Explicación detallada
+    acciones_sugeridas = models.JSONField(default=dict, blank=True)  # Ej: {"sugerencia": "reponer stock"}
+
     fecha_creacion = models.DateTimeField(auto_now_add=True)
-    procesada = models.BooleanField(default=False)  # Para saber si ya se notificó
+    fecha_expiracion = models.DateTimeField(null=True, blank=True)
+    fecha_resolucion = models.DateTimeField(null=True, blank=True)
+    procesada = models.BooleanField(default=False)
+
+    usuario_creador = models.ForeignKey(settings.AUTH_USER_MODEL, null=True, blank=True, on_delete=models.SET_NULL, related_name='alertas_creadas')
+    usuario_resolutor = models.ForeignKey(settings.AUTH_USER_MODEL, null=True, blank=True, on_delete=models.SET_NULL, related_name='alertas_resueltas')
+
+    canal_notificacion = models.CharField(max_length=20, blank=True)  # push/email/app
+    fecha_notificacion = models.DateTimeField(null=True, blank=True)
 
     def __str__(self):
-        return f"[{self.tipo}] {self.referencia}"
+        return f"[{self.tipo}][{self.urgencia}] {self.resumen} ({self.get_estado_display()})"

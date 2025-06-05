@@ -7,7 +7,8 @@ from .views import (
     MovimientoStockViewSet,
     CargaMasivaProductosView,          
     AplicarAjustePreciosView,
-    exportar_productos_excel
+    exportar_productos_excel,
+    PrevisualizarAjustePreciosView
 )
 
 
@@ -19,7 +20,8 @@ router.register(r'movimientos', MovimientoStockViewSet, basename='movimientostoc
 
 urlpatterns = [
     path('', include(router.urls)),
-    path('carga-masiva/', CargaMasivaProductosView.as_view(), name='carga-masiva-productos'),
-    path('exportar/', exportar_productos_excel, name='exportar_productos_excel'),
+    path('importar-excel/', CargaMasivaProductosView.as_view(), name='carga-masiva-productos'),
+    path('exportar-excel/', exportar_productos_excel, name='exportar_productos_excel'),
     path('actualizar-precios/', AplicarAjustePreciosView.as_view(), name='aplicar-ajuste-precios'),
-]
+    path('actualizar-precios-preview/', PrevisualizarAjustePreciosView.as_view(), name='aplicar-ajuste-precios'),
+] 

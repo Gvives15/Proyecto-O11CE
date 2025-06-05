@@ -27,7 +27,7 @@ class ProductoViewSet(viewsets.ModelViewSet):
     permission_classes = [IsAuthenticated]
 
 
-class CategoriaViewSet(viewsets.ModelViewSet):
+class CategoriaViewSet(viewsets.ModelViewSet): 
     queryset = Categoria.objects.all()
     serializer_class = CategoriaSerializer
     permission_classes = [IsAuthenticated]
@@ -168,7 +168,7 @@ def exportar_productos_excel(request):
         ws[f"A{row_index}"] = producto.codigo
         ws[f"B{row_index}"] = producto.nombre
         ws[f"C{row_index}"] = float(producto.precio)
-        ws[f"D{row_index}"] = producto.cantidad
+        ws[f"D{row_index}"] = producto.stock
         ws[f"E{row_index}"] = producto.unidad
         ws[f"F{row_index}"] = producto.categoria.nombre if producto.categoria else ""
         ws[f"G{row_index}"] = producto.subcategoria.nombre if producto.subcategoria else ""
@@ -179,8 +179,6 @@ def exportar_productos_excel(request):
     response["Content-Disposition"] = "attachment; filename=productos.xlsx"
     wb.save(response)
     return response
-
-
 
 
 class PrevisualizarAjustePreciosView(APIView):
@@ -283,4 +281,3 @@ class AplicarAjustePreciosView(APIView):
             "porcentaje_aplicado": porcentaje,
             "total_modificados": productos_modificados
         }, status=200)
-
