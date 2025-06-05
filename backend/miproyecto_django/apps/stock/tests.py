@@ -144,6 +144,31 @@ class StockTestCase(TestCase):
         historial = MovimientoStock.objects.filter(producto=self.prod)
         self.assertIn(mov, historial)
 
+    def test_previsualizar_ajuste_precios(self):
+        url = '/api/v1/stock/actualizar-precios-preview/'
+        data = {
+            'tipo': 'cat',
+            'id': self.categoria.id,
+            'porcentaje': 10
+        }
+        response = self.client.post(url, data)
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json().get('total_afectados'), 1)
+        productos = response.json().get('productos')
+        self.assertEqual(productos[0]['precio_nuevo'], 110.0)
+
+    def test_aplicar_ajuste_precios(self):
+        url = '/api/v1/stock/actualizar-precios/'
+        data = {
+            'tipo': 'cat',
+            'id': self.categoria.id,
+            'porcentaje': 10
+        }
+        response = self.client.post(url, data)
+        self.assertEqual(response.status_code, 200)
+        self.prod.refresh_from_db()
+        self.assertEqual(float(self.prod.precio), 110.0)
+
     # def test_permisos_usuario(self):
     #     # PENDIENTE: Se implementa cuando el módulo de usuario/roles esté activo
     #     pass
