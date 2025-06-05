@@ -16,7 +16,6 @@ from .filters import ProductoFilter
 import openpyxl
 from openpyxl.utils import get_column_letter
 from django.http import HttpResponse
-from .models import Producto
 
 
 class ProductoViewSet(viewsets.ModelViewSet):

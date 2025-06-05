@@ -144,7 +144,7 @@ class StockTestCase(TestCase):
         historial = MovimientoStock.objects.filter(producto=self.prod)
         self.assertIn(mov, historial)
 
-    def test_previsualizar_ajuste_precios(self):
+   def test_previsualizar_ajuste_precios(self):
         url = '/api/v1/stock/actualizar-precios-preview/'
         data = {
             'tipo': 'cat',
