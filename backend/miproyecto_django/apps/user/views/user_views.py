@@ -5,8 +5,8 @@ ViewSet para CRUD de usuarios.
 from django.contrib.auth import get_user_model
 from rest_framework import viewsets
 
-from apps.user.permissions import IsAdminOrHasPermission
-from apps.user.serializers import (
+from users.permissions import IsAdminOrHasPermission
+from users.serializers import (
     UserSerializer,
     UserDetailSerializer,
     UserPermissionUpdateSerializer,
