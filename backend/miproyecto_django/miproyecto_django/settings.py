@@ -69,7 +69,7 @@ MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware',
 
     # ⬇️  Nuestro middleware
-    'users.middleware.JWTAuthenticationFromCookieMiddleware',
+    'apps.user.middleware.JWTAuthenticationFromCookieMiddleware',
 
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
