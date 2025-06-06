@@ -1,64 +1,47 @@
 from django.core.management.base import BaseCommand
+from django.contrib.auth.models import Permission
 from django.contrib.contenttypes.models import ContentType
-from ...models import CustomPermission, RolePermission
+
+from ...models import Rol, Usuario
 from ..permissions_config import PERMISSIONS
 
+
 class Command(BaseCommand):
-    help = 'Sincroniza los permisos definidos en permissions_config.py con la base de datos'
+    help = "Sincroniza los permisos definidos en permissions_config.py"
 
     def handle(self, *args, **options):
-        # Obtener el content type para el modelo Usuario
-        user_content_type = ContentType.objects.get(app_label='user', model='usuario')
-        
-        # Contadores para el reporte
-        created = 0
-        updated = 0
-        deleted = 0
-        
-        # Obtener todos los permisos existentes
-        existing_permissions = set(CustomPermission.objects.values_list('codename', flat=True))
-        
-        # Obtener todos los códigos de permisos definidos
-        defined_permissions = set()
-        for category in PERMISSIONS.values():
-            defined_permissions.update(category.keys())
-        
-        # Eliminar permisos que ya no están definidos
-        to_delete = existing_permissions - defined_permissions
+        user_ct = ContentType.objects.get_for_model(Usuario)
+
+        existing = set(
+            Permission.objects.filter(content_type=user_ct).values_list("codename", flat=True)
+        )
+        defined = set()
+        for perms in PERMISSIONS.values():
+            defined.update(perms.keys())
+
+        to_delete = existing - defined
         if to_delete:
-            CustomPermission.objects.filter(codename__in=to_delete).delete()
-            deleted = len(to_delete)
-            self.stdout.write(f"Eliminados {deleted} permisos obsoletos")
-        
-        # Crear o actualizar permisos
-        for category, perms in PERMISSIONS.items():
-            for codename, perm_data in perms.items():
-                perm, created_flag = CustomPermission.objects.update_or_create(
+            Permission.objects.filter(content_type=user_ct, codename__in=to_delete).delete()
+
+        created = updated = 0
+        for perms in PERMISSIONS.values():
+            for codename, data in perms.items():
+                perm, created_flag = Permission.objects.update_or_create(
                     codename=codename,
-                    defaults={
-                        'name': perm_data['name'],
-                        'description': perm_data['description'],
-                        'content_type': user_content_type
-                    }
+                    content_type=user_ct,
+                    defaults={"name": data["name"]},
                 )
-                
                 if created_flag:
                     created += 1
                 else:
                     updated += 1
-                
-                # Sincronizar permisos de roles
-                for role in perm_data['roles']:
-                    RolePermission.objects.get_or_create(
-                        rol=role,
-                        permission=perm,
-                        defaults={'is_active': True}
-                    )
-        
-        # Reporte final
-        self.stdout.write(self.style.SUCCESS(
-            f"Sincronización completada:\n"
-            f"- {created} permisos creados\n"
-            f"- {updated} permisos actualizados\n"
-            f"- {deleted} permisos eliminados"
-        )) 
+
+                for role_name in data.get("roles", []):
+                    rol, _ = Rol.objects.get_or_create(nombre=role_name)
+                    rol.permisos.add(perm)
+
+        self.stdout.write(
+            self.style.SUCCESS(
+                f"Permisos sincronizados: {created} creados, {updated} actualizados, {len(to_delete)} eliminados"
+            )
+        )
