@@ -3,13 +3,12 @@ Vistas de autenticación: registro, login y logout.
 """
 
 from django.contrib.auth import authenticate
-from django.conf import settings
 from rest_framework import generics, status
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework_simplejwt.tokens import RefreshToken
 
-from apps.user.serializers import RegisterSerializer, UserSerializer
+from users.serializers import RegisterSerializer, UserSerializer
 
 ACCESS_COOKIE = "access_token"
 REFRESH_COOKIE = "refresh_token"
@@ -46,11 +45,11 @@ class LoginView(APIView):
         # Guardar cookies seguras
         resp.set_cookie(
             ACCESS_COOKIE, str(access), httponly=True, samesite="Lax",
-            secure=not settings.DEBUG, path="/"
+            secure=not request.settings.DEBUG, path="/"
         )
         resp.set_cookie(
             REFRESH_COOKIE, str(refresh), httponly=True, samesite="Lax",
-            secure=not settings.DEBUG, path="/"
+            secure=not request.settings.DEBUG, path="/"
         )
         return resp
 
