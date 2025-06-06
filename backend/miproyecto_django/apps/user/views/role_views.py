@@ -4,13 +4,13 @@ ViewSet para CRUD de roles.
 
 from rest_framework import viewsets
 
-from users.permissions import IsAdminOrHasPermission
-from users.serializers import (
-    RoleSerializer,
-    RoleDetailSerializer,
-    RolePermissionUpdateSerializer,
+from apps.user.permissions import IsAdminOrHasPermission
+from apps.user.serializers import (
+    RolSerializer,
+    RolDetailSerializer,
+    RolPermisosUpdateSerializer,
 )
-from users.models import Role
+from apps.user.models import Rol
 
 
 class RoleViewSet(viewsets.ModelViewSet):
@@ -18,8 +18,8 @@ class RoleViewSet(viewsets.ModelViewSet):
     CRUD de roles y asignación de permisos.
     """
 
-    queryset = Role.objects.prefetch_related("permisos")
-    serializer_class = RoleSerializer
+    queryset = Rol.objects.prefetch_related("permisos")
+    serializer_class = RolSerializer
     permission_classes = [IsAdminOrHasPermission]
 
     permission_map = {
@@ -34,13 +34,13 @@ class RoleViewSet(viewsets.ModelViewSet):
 
     def get_serializer_class(self):
         if self.action in {"retrieve", "update", "partial_update"}:
-            return RoleDetailSerializer
+            return RolDetailSerializer
         return super().get_serializer_class()
 
     # Acción extra para asignar permisos
     def set_permissions(self, request, pk=None):
         role = self.get_object()
-        serializer = RolePermissionUpdateSerializer(data=request.data)
+        serializer = RolPermisosUpdateSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         role.permisos.set(serializer.validated_data["permisos"])
         return Response({"detail": "Permisos asignados."})

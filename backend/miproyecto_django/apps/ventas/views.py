@@ -1,8 +1,11 @@
 from rest_framework import viewsets, permissions
+from rest_framework.exceptions import ValidationError
+from django_filters.rest_framework import DjangoFilterBackend
+
 from .models import Venta
 from .serializers import VentaSerializer
 from .filters import VentaFilter
-from django_filters.rest_framework import DjangoFilterBackend
+from apps.caja.models import Caja, MovimientoCaja
 
 class VentaViewSet(viewsets.ModelViewSet):
     queryset = Venta.objects.all().order_by('-fecha')
