@@ -1,8 +1,8 @@
 from django.db import models
-from apps.user.models import CustomUser
+from apps.user.models import Usuario
 
 class Caja(models.Model):
-    usuario = models.ForeignKey(CustomUser, on_delete=models.PROTECT)
+    usuario = models.ForeignKey(Usuario, on_delete=models.PROTECT)
     fecha_apertura = models.DateTimeField(auto_now_add=True)
     fecha_cierre = models.DateTimeField(null=True, blank=True)
     monto_inicial = models.DecimalField(max_digits=10, decimal_places=2)

@@ -2,7 +2,7 @@ from django.db import models
 from django.core.exceptions import ValidationError
 from datetime import date
 from apps.empresa.models import Almacen
-from apps.user.models import CustomUser
+from apps.user.models import Usuario
 from .utils import limpiar_texto
 
 
@@ -97,7 +97,7 @@ class MovimientoStock(models.Model):
     cantidad = models.PositiveIntegerField()
     fecha = models.DateTimeField(auto_now_add=True)
     motivo = models.CharField(max_length=100, blank=True)
-    usuario = models.ForeignKey(CustomUser, on_delete=models.SET_NULL, null=True)
+    usuario = models.ForeignKey(Usuario, on_delete=models.SET_NULL, null=True)
 
     def clean(self):
         if not self.tipo in dict(self.TIPO_CHOICES):

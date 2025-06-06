@@ -1,7 +1,7 @@
 from django.db import models
 from apps.clientes.models import Cliente
 from apps.stock.models import Producto
-from apps.user.models import CustomUser
+from apps.user.models import Usuario
 from apps.caja.models import Caja
 
 class Venta(models.Model):
@@ -11,7 +11,7 @@ class Venta(models.Model):
         ('remito', 'Remito'),
     ]
     cliente = models.ForeignKey(Cliente, on_delete=models.SET_NULL, null=True, blank=True)
-    usuario = models.ForeignKey(CustomUser, on_delete=models.SET_NULL, null=True)
+    usuario = models.ForeignKey(Usuario, on_delete=models.SET_NULL, null=True)
     fecha = models.DateTimeField(auto_now_add=True)
     tipo_documento = models.CharField(max_length=20, choices=TIPO_DOCUMENTO_CHOICES, default='ticket')
     total = models.DecimalField(max_digits=12, decimal_places=2)
