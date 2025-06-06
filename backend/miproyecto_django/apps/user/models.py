@@ -1,63 +1,89 @@
+# users/models.py
+"""Modelos personalizados de usuario y rol para el sistema de autenticación.
+
+Este archivo define:
+1. Rol: contenedor liviano encima de los permisos de Django.
+2. Usuario: extiende AbstractUser, usa el email como identificador
+   y añade soporte para Rol + permisos extra.
+
+Buenas prácticas aplicadas
+--------------------------
+* Se utiliza `email` como campo único para iniciar sesión.
+* Se define `USERNAME_FIELD = 'email'` y se añade un índice único.
+* No se tocan los permisos por defecto de Django; se complementan.
+"""
+
+from django.contrib.auth.models import AbstractUser, Permission
 from django.db import models
-from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin
-from django.utils import timezone
-from django.contrib.auth.base_user import BaseUserManager
-from apps.empresa.models import Sucursal
+from django.utils.translation import gettext_lazy as _
 
-class Permiso(models.Model):
-    nombre = models.CharField(max_length=100, default='Sin nombre')
-    codigo = models.CharField(max_length=100, unique=True, default='sin_codigo')
-    descripcion = models.TextField(blank=True, default='')
-
-    def __str__(self):
-        return self.nombre
 
 class Rol(models.Model):
-    nombre = models.CharField(max_length=50, unique=True, default='sin_rol')
-    descripcion = models.TextField(blank=True, default='')
-    permisos = models.ManyToManyField(Permiso, blank=True)
+    """Representa un rol con un conjunto de permisos asociado."""
+    nombre = models.CharField(_('nombre'), max_length=50, unique=True)
+    permisos = models.ManyToManyField(
+        Permission,
+        verbose_name=_('permisos'),
+        blank=True,
+        help_text=_('Permisos que heredan los usuarios con este rol.'),
+    )
 
-    def __str__(self):
-        return self.nombre 
+    class Meta:
+        verbose_name = _('rol')
+        verbose_name_plural = _('roles')
+        default_permissions = ()  # Se definen manualmente abajo
+        permissions = [
+            ('view_rol', _('Ver lista de roles')),
+            ('add_rol', _('Crear roles')),
+            ('change_rol', _('Modificar roles')),
+            ('delete_rol', _('Eliminar roles')),
+        ]
+
+    def __str__(self) -> str:
+        return self.nombre
 
 
-class CustomUserManager(BaseUserManager):
-    def create_user(self, email, first_name, last_name, password=None, **extra_fields):
-        if not email:
-            raise ValueError('El email es obligatorio')
-        email = self.normalize_email(email)
-        user = self.model(email=email, first_name=first_name, last_name=last_name, **extra_fields)
-        user.set_password(password)
-        user.save(using=self._db)
-        return user
+class Usuario(AbstractUser):
+    """
+    Modelo de usuario personalizado.
 
-    def create_superuser(self, email, first_name, last_name, password=None, **extra_fields):
-        extra_fields.setdefault('is_staff', True)
-        extra_fields.setdefault('is_superuser', True)
-        return self.create_user(email, first_name, last_name, password, **extra_fields)
-
-class CustomUser(AbstractBaseUser, PermissionsMixin):
-    email = models.EmailField(unique=True)
-    first_name = models.CharField(max_length=50)
-    last_name = models.CharField(max_length=50)
-    rol = models.ForeignKey(Rol, on_delete=models.SET_NULL, null=True, blank=True)
-    permisos_extra = models.ManyToManyField(Permiso, blank=True, related_name='usuarios_con_permiso_extra')
-    sucursal = models.ForeignKey("empresa.Sucursal", on_delete=models.SET_NULL, null=True, blank=True)
-    is_active = models.BooleanField(default=True)
-    is_staff = models.BooleanField(default=False)
-    created_at = models.DateTimeField(default=timezone.now)
+    Se usa el email como nombre de usuario y se añade:
+    * rol        -> relación con Rol
+    * permisos_adicionales -> permisos directos aparte del rol
+    """
+    email = models.EmailField(_('correo electrónico'), unique=True)
+    rol = models.ForeignKey(
+        Rol,
+        verbose_name=_('rol'),
+        on_delete=models.PROTECT,
+        null=True,
+        blank=True,
+    )
+    permisos_adicionales = models.ManyToManyField(
+        Permission,
+        verbose_name=_('permisos adicionales'),
+        blank=True,
+        help_text=_('Permisos asignados directamente al usuario.'),
+    )
 
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['first_name', 'last_name']
+    REQUIRED_FIELDS = ['username']  # Para compatibilidad con createsuperuser
 
-    objects = CustomUserManager()
+    class Meta:
+        verbose_name = _('usuario')
+        verbose_name_plural = _('usuarios')
 
-    def __str__(self):
-        return f'{self.first_name} {self.last_name} ({self.email})'
+    # --- Métodos utilitarios -------------------------------------------------
 
-    def get_permisos_completos(self):
-        """Devuelve todos los permisos del usuario (rol + extras)."""
-        permisos_rol = set(self.rol.permisos.all()) if self.rol else set()
-        permisos_extras = set(self.permisos_extra.all())
-        return permisos_rol.union(permisos_extras)
+    def get_all_permissions(self) -> set[Permission]:
+        """
+        Devuelve el conjunto completo de permisos del usuario:
+        * permisos heredados del rol
+        * permisos asignados directamente
+        """
+        permisos = set()
+        if self.rol:
+            permisos.update(self.rol.permisos.all())
+        permisos.update(self.permisos_adicionales.all())
+        return permisos
 

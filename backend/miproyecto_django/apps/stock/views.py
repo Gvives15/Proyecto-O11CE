@@ -14,10 +14,7 @@ from .filters import ProductoFilter
 import openpyxl
 from openpyxl.utils import get_column_letter
 from django.http import HttpResponse
-<<<<<<< HEAD
-=======
 from .utils import limpiar_texto
->>>>>>> a4d28b9180b3341d4e8fa49d46d89cdd0ae9b5a7
 
 
 class ProductoViewSet(viewsets.ModelViewSet):

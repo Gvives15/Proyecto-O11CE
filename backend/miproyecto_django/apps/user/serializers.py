@@ -1,72 +1,142 @@
+# users/serializers.py
+"""
+Serializadores DRF para la app de usuarios.
+
+Contiene:
+* Serializador de permisos
+* Serializadores de roles (lista y detalle)
+* Serializadores de usuarios (lista, detalle, registro)
+* Serializadores de actualización de permisos (rol y usuario)
+"""
+
+from django.contrib.auth.password_validation import validate_password
+from django.contrib.auth.models import Permission
 from rest_framework import serializers
-from .models import CustomUser, Rol, Permiso
+
+from .models import Rol, Usuario
 
 
-# 🔹 1. Serializador de Permisos (lectura)
-# Este muestra los permisos completos: id, nombre, código y descripción
-class PermisoSerializer(serializers.ModelSerializer):
+# -------------------------- Permisos ---------------------------------------
+
+
+class PermissionSerializer(serializers.ModelSerializer):
+    """Serializa un permiso de Django."""
     class Meta:
-        model = Permiso
-        fields = ['id', 'nombre', 'codigo', 'descripcion']
+        model = Permission
+        fields = ['id', 'codename', 'name', 'content_type']
 
 
-# 🔹 2. Serializador de Roles (lectura)
-# Muestra el nombre del rol, su descripción y todos los permisos asociados
+# -------------------------- Roles ------------------------------------------
+
+
 class RolSerializer(serializers.ModelSerializer):
-    permisos = PermisoSerializer(many=True, read_only=True)
+    """Serializador básico de rol (solo lectura de permisos)."""
+    permisos = PermissionSerializer(many=True, read_only=True)
 
     class Meta:
         model = Rol
-        fields = ['id', 'nombre', 'descripcion', 'permisos']
+        fields = ['id', 'nombre', 'permisos']
 
 
-# 🔹 3. Serializador de Usuario (lectura)
-# Muestra todos los datos importantes del usuario y los permisos extra que tiene
-class CustomUserSerializer(serializers.ModelSerializer):
-    rol = RolSerializer(read_only=True)
-    permisos_extra = PermisoSerializer(many=True, read_only=True)
-
-    class Meta:
-        model = CustomUser
-        fields = [
-            'id', 'email', 'first_name', 'last_name',
-            'rol', 'permisos_extra', 'is_active', 'created_at'
-        ]
-class CustomUserCreateUpdateSerializer(serializers.ModelSerializer):
-    # Esta línea permite que permisos_extra se pase como una lista de IDs (por ej: [1, 3, 7])
-    permisos_extra = serializers.PrimaryKeyRelatedField(
-        queryset=Permiso.objects.all(),
-        many=True,
-        required=False
+class RolDetailSerializer(serializers.ModelSerializer):
+    """Serializador de detalle de rol (permite actualizar permisos)."""
+    permisos = serializers.PrimaryKeyRelatedField(
+        queryset=Permission.objects.all(), many=True
     )
 
     class Meta:
-        model = CustomUser
+        model = Rol
+        fields = ['id', 'nombre', 'permisos']
+
+
+# -------------------------- Usuarios ---------------------------------------
+
+
+class UsuarioSerializer(serializers.ModelSerializer):
+    """Serializador de lista de usuarios."""
+    rol = RolSerializer(read_only=True)
+
+    class Meta:
+        model = Usuario
+        fields = ['id', 'username', 'email', 'rol', 'is_active', 'is_staff']
+
+
+class UsuarioDetailSerializer(serializers.ModelSerializer):
+    """Serializador de detalle de usuario (con permisos y rol)."""
+    rol = RolDetailSerializer()
+    permisos_adicionales = PermissionSerializer(many=True, read_only=True)
+
+    class Meta:
+        model = Usuario
         fields = [
-            'email', 'first_name', 'last_name', 'rol', 'sucursal',
-            'permisos_extra', 'password'
+            'id',
+            'username',
+            'email',
+            'rol',
+            'permisos_adicionales',
+            'is_active',
+            'is_staff',
         ]
-        extra_kwargs = {
-            'password': {'write_only': True}  # no se devuelve al cliente
-        }
+
+
+class RegisterSerializer(serializers.ModelSerializer):
+    """
+    Serializador para registrar un nuevo usuario.
+
+    Valida la contraseña con las validaciones de Django
+    (`AUTH_PASSWORD_VALIDATORS`).
+    """
+    password = serializers.CharField(write_only=True)
+
+    class Meta:
+        model = Usuario
+        fields = ['email', 'username', 'password', 'rol']
+
+    # --------------- Validaciones -----------------
+
+    def validate_password(self, value: str) -> str:
+        """Valida la contraseña usando los validadores del proyecto."""
+        validate_password(value)
+        return value
+
+    # --------------- Creación ---------------------
 
     def create(self, validated_data):
-        permisos = validated_data.pop('permisos_extra', [])
         password = validated_data.pop('password')
-        user = CustomUser.objects.create(**validated_data)
-        user.set_password(password)
-        user.save()
-        user.permisos_extra.set(permisos)
-        return user
+        usuario = Usuario(**validated_data)
+        usuario.set_password(password)
+        usuario.save()
+        return usuario
 
-    def update(self, instance, validated_data):
-        permisos = validated_data.pop('permisos_extra', None)
-        password = validated_data.pop('password', None)
-        for attr, value in validated_data.items():
-            setattr(instance, attr, value) 
-        if password:
-            instance.set_password(password)
+
+# ------- Serializadores de actualización de permisos -----------------------
+
+
+class RolPermisosUpdateSerializer(serializers.Serializer):
+    """Actualiza los permisos de un rol."""
+    permisos = serializers.PrimaryKeyRelatedField(
+        queryset=Permission.objects.all(), many=True
+    )
+
+    def update(self, instance: Rol, validated_data):
+        instance.permisos.set(validated_data['permisos'])
         instance.save()
-        if permisos is not None:
-            instance.permisos_extra.set(permisos)
         return instance
+
+    def create(self, validated_data):
+        raise NotImplementedError('Solo se usa para actualizar.')
+
+
+class UsuarioPermisosUpdateSerializer(serializers.Serializer):
+    """Actualiza los permisos adicionales de un usuario."""
+    permisos = serializers.PrimaryKeyRelatedField(
+        queryset=Permission.objects.all(), many=True
+    )
+
+    def update(self, instance: Usuario, validated_data):
+        instance.permisos_adicionales.set(validated_data['permisos'])
+        instance.save()
+        return instance
+
+    def create(self, validated_data):
+        raise NotImplementedError('Solo se usa para actualizar.')

@@ -64,8 +64,13 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
+
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+
+    # ⬇️  Nuestro middleware
+    'users.middleware.JWTAuthenticationFromCookieMiddleware',
+
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -107,11 +112,6 @@ DATABASES = {
         'PORT': os.environ.get('DB_PORT'),
     }
 }
-
-DEBUG = config('DEBUG', cast=bool)
-SECRET_KEY = config('SECRET_KEY')
-FIELD_ENCRYPTION_KEY = config('FIELD_ENCRYPTION_KEY')
-ALLOWED_HOSTS = config('ALLOWED_HOSTS').split(',')
 
 
 # Password validation
@@ -172,7 +172,7 @@ SASS_PRECISION = 8
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-AUTH_USER_MODEL = 'user.CustomUser'
+AUTH_USER_MODEL = 'user.Usuario'
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = config('EMAIL_HOST')
@@ -183,33 +183,61 @@ EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
 
 FIELD_ENCRYPTION_KEY = config('FIELD_ENCRYPTION_KEY')
 
+DEBUG = config('DEBUG', cast=bool)
+SECRET_KEY = config('SECRET_KEY')
+ALLOWED_HOSTS = config('ALLOWED_HOSTS').split(',')
+
 PASSWORD_RESET_TIMEOUT = 3600  # 1 hora
 
 DATA_DIR = os.path.join(BASE_DIR, 'assets')
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.IsAuthenticated',  # Exige login por defecto
+        'rest_framework.permissions.IsAuthenticated',
     ],
-    #poner en produccion
-    #"DEFAULT_RENDERER_CLASSES": [
-    #    "rest_framework.renderers.JSONRenderer",
-    #],
     'DEFAULT_FILTER_BACKENDS': [
         'django_filters.rest_framework.DjangoFilterBackend',
     ],
     'DEFAULT_AUTHENTICATION_CLASSES': [
+        # ⚠️  Mantén Session/Básico sólo si aún usas el admin HTML tradicional
         'rest_framework.authentication.SessionAuthentication',
-        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+        # (nuestro middleware colocará la cabecera para que SimpleJWT funcione)
     ],
+    # Activa JSON-only en producción si quieres
+    # "DEFAULT_RENDERER_CLASSES": ["rest_framework.renderers.JSONRenderer"],
 }
+
 
 CORS_ALLOW_ALL_ORIGINS = True
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
+
+]
+
+CORS_ALLOW_ALL_ORIGINS = DEBUG   # True sólo en dev
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+    "http://localhost:8000",
+    "http://127.0.0.1:8000",
 ]
 
 
- 
+
+from datetime import timedelta
+SIMPLE_JWT = {
+    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=60),
+    "REFRESH_TOKEN_LIFETIME": timedelta(days=7),
+    "ROTATE_REFRESH_TOKENS": False,
+    "BLACKLIST_AFTER_ROTATION": False,
+
+    # Algoritmo por defecto: HS256
+    "ALGORITHM": "HS256",
+    "SIGNING_KEY": SECRET_KEY,
+}
+
+LANGUAGE_CODE = 'es-ar'
+TIME_ZONE = 'America/Argentina/Cordoba'
