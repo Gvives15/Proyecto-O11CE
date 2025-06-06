@@ -4,12 +4,13 @@ ViewSet para CRUD de usuarios.
 
 from django.contrib.auth import get_user_model
 from rest_framework import viewsets
+from rest_framework.response import Response
 
-from users.permissions import IsAdminOrHasPermission
-from users.serializers import (
-    UserSerializer,
-    UserDetailSerializer,
-    UserPermissionUpdateSerializer,
+from ..permissions import IsAdminOrHasPermission
+from ..serializers import (
+    UsuarioSerializer,
+    UsuarioDetailSerializer,
+    UsuarioPermisosUpdateSerializer,
 )
 
 User = get_user_model()
@@ -21,7 +22,7 @@ class UserViewSet(viewsets.ModelViewSet):
     """
 
     queryset = User.objects.select_related("rol").prefetch_related("permisos_adicionales")
-    serializer_class = UserSerializer
+    serializer_class = UsuarioSerializer
     permission_classes = [IsAdminOrHasPermission]
 
     # Mapeo acción → permiso requerido
@@ -37,13 +38,13 @@ class UserViewSet(viewsets.ModelViewSet):
 
     def get_serializer_class(self):
         if self.action in {"retrieve", "update", "partial_update"}:
-            return UserDetailSerializer
+            return UsuarioDetailSerializer
         return super().get_serializer_class()
 
     # Acción extra para actualizar permisos adicionales
     def set_extra_permissions(self, request, pk=None):
         user = self.get_object()
-        serializer = UserPermissionUpdateSerializer(data=request.data)
+        serializer = UsuarioPermisosUpdateSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         user.permisos_adicionales.set(serializer.validated_data["permisos"])
         return Response({"detail": "Permisos actualizados."})

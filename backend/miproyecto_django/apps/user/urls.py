@@ -5,14 +5,14 @@ Enrutado de la app users.
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 
-from users.views.auth_views import RegisterView, LoginView, LogoutView
-from users.views.user_views import UserViewSet
-from users.views.role_views import RoleViewSet
-from users.views.permission_views import PermissionListView
+from .views.auth_views import RegisterView, LoginView, LogoutView
+from .views.user_views import UserViewSet
+from .views.role_views import RolViewSet
+from .views.permissions_views import PermissionListView
 
 router = DefaultRouter()
 router.register(r"usuarios", UserViewSet, basename="usuario")
-router.register(r"roles", RoleViewSet, basename="role")
+router.register(r"roles", RolViewSet, basename="role")
 
 urlpatterns = [
     # Endpoints de autenticación

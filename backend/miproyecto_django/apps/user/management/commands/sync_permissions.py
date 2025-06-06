@@ -1,7 +1,7 @@
 from django.core.management.base import BaseCommand
 from django.contrib.contenttypes.models import ContentType
-from user.models import CustomPermission, RolePermission
-from user.permissions_config import PERMISSIONS
+from ...models import CustomPermission, RolePermission
+from ..permissions_config import PERMISSIONS
 
 class Command(BaseCommand):
     help = 'Sincroniza los permisos definidos en permissions_config.py con la base de datos'

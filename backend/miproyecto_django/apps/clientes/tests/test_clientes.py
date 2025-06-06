@@ -4,7 +4,10 @@ from rest_framework.test import APITestCase
 from rest_framework_simplejwt.tokens import RefreshToken
 
 from apps.clientes.models import Cliente
-from apps.user.models import CustomUser, Rol
+from django.contrib.auth import get_user_model
+from apps.user.models import Rol
+
+User = get_user_model()
 
 
 class ClienteAPITestCase(APITestCase):
@@ -13,15 +16,15 @@ class ClienteAPITestCase(APITestCase):
         vendedor_role = Rol.objects.create(nombre='vendedor')
         viewer_role = Rol.objects.create(nombre='viewer')
 
-        self.admin_user = CustomUser.objects.create_user(
+        self.admin_user = User.objects.create_user(
             email='admin@example.com', first_name='Admin', last_name='User',
             password='adminpass', rol=admin_role
         )
-        self.vendedor_user = CustomUser.objects.create_user(
+        self.vendedor_user = User.objects.create_user(
             email='vendor@example.com', first_name='Vendor', last_name='User',
             password='vendorpass', rol=vendedor_role
         )
-        self.viewer_user = CustomUser.objects.create_user(
+        self.viewer_user = User.objects.create_user(
             email='viewer@example.com', first_name='Viewer', last_name='User',
             password='viewerpass', rol=viewer_role
         )

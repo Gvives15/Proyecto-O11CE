@@ -5,8 +5,8 @@ Vista de solo lectura para listar todos los permisos disponibles.
 from django.contrib.auth.models import Permission
 from rest_framework import generics
 
-from users.serializers import PermissionSerializer
-from users.permissions import IsAdminOrHasPermission
+from ..serializers import PermissionSerializer
+from ..permissions import IsAdminOrHasPermission
 
 
 class PermissionListView(generics.ListAPIView):

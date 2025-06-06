@@ -8,7 +8,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework_simplejwt.tokens import RefreshToken
 
-from users.serializers import RegisterSerializer, UserSerializer
+from ..serializers import RegisterSerializer, UsuarioSerializer
 
 ACCESS_COOKIE = "access_token"
 REFRESH_COOKIE = "refresh_token"
@@ -41,7 +41,7 @@ class LoginView(APIView):
         refresh = RefreshToken.for_user(user)
         access = refresh.access_token
 
-        resp = Response(UserSerializer(user).data)
+        resp = Response(UsuarioSerializer(user).data)
         # Guardar cookies seguras
         resp.set_cookie(
             ACCESS_COOKIE, str(access), httponly=True, samesite="Lax",
